@@ -1,7 +1,6 @@
 // components/TopBar.tsx
 import { useState } from 'react';
 import { useRouter } from 'next/router'; // Import useRouter for navigation
-import styles from './TopBar.module.css'; // Import as CSS Module
 
 export const TopBar: React.FC = () => {
 	const router = useRouter(); // Initialize router

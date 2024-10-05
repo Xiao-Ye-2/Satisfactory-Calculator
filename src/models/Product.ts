@@ -1,6 +1,6 @@
 import { Product } from "./types";
 
-export class ProductClass {
+export class ProductClass implements Product {
     id: string;
     name: string;
     isIngredient: boolean;

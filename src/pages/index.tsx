@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react';
 import { TopBar } from '@/components/TopBar';
 import { productList } from '@/config/products';
 import { machineList } from '@/config/machines';
-import { machineMap, productMap, recipeMap } from '@/config/maps';
+import { recipeMap } from '@/config/maps';
 
 
 export default function Home() {
