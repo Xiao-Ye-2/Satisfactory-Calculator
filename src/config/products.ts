@@ -1,6 +1,6 @@
 import { ProductClass } from "@/models/Product";
 
-export const products = [
+export const productList = [
     {
     "id": "AIExpension",
     "imagePath": "/images/AIExpension.png",

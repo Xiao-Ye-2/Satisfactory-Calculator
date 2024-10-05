@@ -5,15 +5,11 @@ import yaml
 
 image_dir = 'src/public/images/'
 
-# List to hold product details
 products = []
-
 
 def format_name(image_name):
     # Remove the file extension
     name = os.path.splitext(image_name)[0]
-
-    # Split by underscores and capitalize each word
 
     formatted_name = ''.join([part for part in name.split('_')])
     # Insert space before capital letters to separate concatenated words like "IronRods"

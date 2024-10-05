@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { TopBar } from '@/components/TopBar';
-import { products } from '@/config/products';
-import { recipes } from '@/config/recipes';
-import { machines } from '@/config/machines';
+import { productList } from '@/config/products';
+import { machineList } from '@/config/machines';
+import { machineMap, productMap, recipeMap } from '@/config/maps';
 
 
 export default function Home() {
@@ -11,19 +11,56 @@ export default function Home() {
 			<TopBar />
 			<h1>Satisfactory Recipe Calculator</h1>
 			<div>
-				{/* Example: Show loaded products */}
+				<h1>Products</h1>
 				<ul>
-					{[...products.values()].map((product) => (
-						<li key={product.id}>{product.name} {product.id} {product.isIngredient} {product.imagePath}</li>
+					{[...productList.values()].map((product) => (
+						<li key={product.id}>
+							{product.name} {product.id} {product.isIngredient ? 'Ingredient' : 'Product'} {product.imagePath}
+						</li>
+					))}
+				</ul>
+
+			</div>
+			<div>
+				<h1>Machines</h1>
+				<ul>
+					{[...machineList.values()].map((machine) => (
+						<li key={machine.id}>
+							{machine.name} {machine.id} {machine.basePower}
+						</li>
 					))}
 				</ul>
 			</div>
-			<h1> Machines </h1>
+			<h1>Recipes</h1>
 			<div>
-				{/* Example: Show loaded products */}
 				<ul>
-					{[...machines.values()].map((machine) => (
-						<li key={machine.id}>{machine.name} {machine.id} {machine.basePower}</li>
+					{[...recipeMap.entries()].map(([productId, recipes]) => (
+						<div key={productId}>
+							<h2>Recipes for {productId}</h2>
+							<ul>
+								{recipes.map((recipe) => (
+									<li key={recipe.id}>
+										Recipe ID: {recipe.id} - Machine: {recipe.machine.name}
+										<br />
+										Inputs:
+										<br />
+										{recipe.inputs.map((prodQuant) => (
+											<span key={prodQuant.product.id}>
+												{prodQuant.product.name} ({prodQuant.quantity})
+											</span>
+										))}
+										<br />
+										Outputs:
+										<br />
+										{recipe.outputs.map((prodQuant) => (
+											<span key={prodQuant.product.id}>
+												{prodQuant.product.name} ({prodQuant.quantity})
+											</span>
+										))}
+									</li>
+								))}
+							</ul>
+						</div>
 					))}
 				</ul>
 			</div>

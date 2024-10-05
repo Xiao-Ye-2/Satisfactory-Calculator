@@ -1,18 +1,17 @@
-import { RecipeClass } from "@/models/Recipe";
 import { RecipeYAML } from "@/models/types";
 
-const recipesYAML = [
+export const recipesYAML = [
     {
       "id": "iron_plate",
       "inputs": [
         {
-          "productId": "iron_ore",
+          "productId": "IronIngot",
           "quantity": 1
         }
       ],
       "outputs": [
         {
-          "productId": "iron_plate",
+          "productId": "IronPlates",
           "quantity": 1
         }
       ],
@@ -23,13 +22,13 @@ const recipesYAML = [
       "id": "copper_wire",
       "inputs": [
         {
-          "productId": "copper_ore",
+          "productId": "copper",
           "quantity": 1
         }
       ],
       "outputs": [
         {
-          "productId": "copper_wire",
+          "productId": "Quickwire",
           "quantity": 1
         }
       ],
@@ -37,20 +36,20 @@ const recipesYAML = [
       "isDefault": true
     },
     {
-      "id": "copper_wire",
+      "id": "copper_wire22",
       "inputs": [
         {
-          "productId": "copper_ore",
-          "quantity": 1
+          "productId": "copper",
+          "quantity": 2
         }
       ],
       "outputs": [
         {
-          "productId": "copper_wire",
+          "productId": "Quickwire",
           "quantity": 1
         },
         {
-          "productId": "iron_plate",
+          "productId": "IronPlates",
           "quantity": 1
         }
       ],
@@ -58,5 +57,3 @@ const recipesYAML = [
       "isDefault": false
     }
 ] as RecipeYAML[];
-
-export const recipes = recipesYAML.map((recipeYAML) => new RecipeClass(recipeYAML));

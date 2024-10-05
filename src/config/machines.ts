@@ -1,7 +1,6 @@
 import { MachineClass } from "@/models/Machine";
-import { Machine } from "@/models/types";
 
-export const machines = [
+export const machineList = [
     {
       "id": "assembler",
       "name": "Assembler",

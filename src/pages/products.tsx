@@ -1,10 +1,10 @@
 import { ProductClass } from "@/models/Product";
-import { products } from '@/config/products';
+import { productList } from '@/config/products';
 
 const ProductPage: React.FC = () => {
   const productCategories = {
-    Ingredients: products.filter((product: ProductClass) => product.isIngredient),
-    Others: products.filter((product: ProductClass) => !product.isIngredient),
+    Ingredients: productList.filter((product: ProductClass) => product.isIngredient),
+    Others: productList.filter((product: ProductClass) => !product.isIngredient),
   };
 
   return (

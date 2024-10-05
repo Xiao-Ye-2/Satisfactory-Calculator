@@ -12,13 +12,4 @@ export class ProductClass {
         this.isIngredient = isIngredient;
         this.imagePath = imagePath;
     }
-
-    toJSON() {
-        return {
-            id: this.id,
-            name: this.name,
-            isIngredient: this.isIngredient,
-            imagePath: this.imagePath,
-        };
-    }
 }

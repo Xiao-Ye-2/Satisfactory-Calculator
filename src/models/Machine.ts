@@ -15,12 +15,4 @@ export class MachineClass implements Machine {
 		// Efficiency ranges from 0 (0%) to 2.5 (250%), multiply by basePower
 		return this.basePower * efficiency;
 	}
-
-	toJSON() {
-		return {
-			id: this.id,
-			name: this.name,
-			basePower: this.basePower,
-		};
-	}
 }
