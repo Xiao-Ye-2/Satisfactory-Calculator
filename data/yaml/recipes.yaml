@@ -1679,7 +1679,7 @@
   machineId: Packager
   name: Packaged Fuel
   outputs:
-  - productId: Fuel
+  - productId:  PackagedFuel
     quantity: 2
   time: 3
 - id: fused-modular-frame
@@ -2123,7 +2123,7 @@
   machineId: Packager
   name: Packaged Turbofuel
   outputs:
-  - productId: TurboFuel
+  - productId: PackagedTurboFuel
     quantity: 2
   time: 6
 - id: packaged-water
@@ -2578,7 +2578,7 @@
   time: 2
 - id: unpackage-fuel
   inputs:
-  - productId: Fuel
+  - productId: PackagedFuel
     quantity: 2
   isDefault: true
   isVariablePower: false
@@ -2662,7 +2662,7 @@
   time: 1
 - id: unpackage-turbofuel
   inputs:
-  - productId: TurboFuel
+  - productId: PackagedTurboFuel
     quantity: 2
   isDefault: true
   isVariablePower: false

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { machineList } from '@/config/machines';
 
 export default function MachinesPage() {
@@ -8,7 +9,13 @@ export default function MachinesPage() {
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[...machineList.values()].map((machine) => (
             <li key={machine.id} className="bg-white rounded-lg shadow-md p-4">
-              <img src={`machines/${machine.id}.png`} alt={machine.name} className="w-full mb-4" />
+              <Image
+                src={`/machines/${machine.id}.png`}
+                alt={machine.name}
+                width={500}
+                height={500}
+                className="w-full mb-4"
+              />
               <h3 className="text-lg font-medium">{machine.name}</h3>
               <p className="text-gray-600">ID: {machine.id}</p>
               <p className="text-gray-600">Base Power: {machine.basePower}W</p>

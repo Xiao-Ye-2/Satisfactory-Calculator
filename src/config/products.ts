@@ -308,10 +308,10 @@ export const productList = [
       "name": "Flower Petals"
     },
     {
-      "id": "Fuel",
+      "id": "PackagedFuel",
       "imagePath": "/images/Fuel.png",
       "isIngredient": false,
-      "name": "Fuel"
+      "name": "Packaged Fuel"
     },
     {
       "id": "FusedModularFrame",
@@ -878,10 +878,10 @@ export const productList = [
       "name": "Time Crystal"
     },
     {
-      "id": "TurboFuel",
+      "id": "PackagedTurboFuel",
       "imagePath": "/images/TurboFuel.png",
       "isIngredient": false,
-      "name": "Turbo Fuel"
+      "name": "Packaged Turbo Fuel"
     },
     {
       "id": "TurboMotor",

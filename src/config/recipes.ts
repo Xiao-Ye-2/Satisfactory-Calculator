@@ -2901,7 +2901,7 @@ export const recipesYAML = [
       "name": "Packaged Fuel",
       "outputs": [
         {
-          "productId": "Fuel",
+          "productId": "PackagedFuel",
           "quantity": 2
         }
       ],
@@ -3665,7 +3665,7 @@ export const recipesYAML = [
       "name": "Packaged Turbofuel",
       "outputs": [
         {
-          "productId": "TurboFuel",
+          "productId": "PackagedTurboFuel",
           "quantity": 2
         }
       ],
@@ -4441,7 +4441,7 @@ export const recipesYAML = [
       "id": "unpackage-fuel",
       "inputs": [
         {
-          "productId": "Fuel",
+          "productId": "PackagedFuel",
           "quantity": 2
         }
       ],
@@ -4585,7 +4585,7 @@ export const recipesYAML = [
       "id": "unpackage-turbofuel",
       "inputs": [
         {
-          "productId": "TurboFuel",
+          "productId": "PackagedTurboFuel",
           "quantity": 2
         }
       ],

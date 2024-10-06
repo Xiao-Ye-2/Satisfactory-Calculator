@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { recipeMap } from '@/config/maps';
 
 export default function RecipesPage() {
@@ -20,7 +21,13 @@ export default function RecipesPage() {
                         <ul className="list-none flex space-x-2 flex-grow w-2/5 pr-2">
                           {recipe.inputs.map((prodQuant) => (
                             <li key={prodQuant.product.id} className="flex items-center">
-                              <img src={prodQuant.product.imagePath} alt={prodQuant.product.name} className="w-6 h-6 mr-2" />
+                              <Image
+                                src={prodQuant.product.imagePath}
+                                alt={prodQuant.product.name}
+                                width={24}
+                                height={24}
+                                className="mr-2"
+                              />
                               {prodQuant.product.name} ({prodQuant.quantity})
                             </li>
                           ))}
@@ -29,7 +36,13 @@ export default function RecipesPage() {
                         <ul className="list-none flex space-x-2 flex-grow w-1/4 pl-2">
                           {recipe.outputs.map((prodQuant) => (
                             <li key={prodQuant.product.id} className="flex items-center">
-                              <img src={prodQuant.product.imagePath} alt={prodQuant.product.name} className="w-6 h-6 mr-2" />
+                              <Image
+                                src={prodQuant.product.imagePath}
+                                alt={prodQuant.product.name}
+                                width={24}
+                                height={24}
+                                className="mr-2"
+                              />
                               {prodQuant.product.name} ({prodQuant.quantity})
                             </li>
                           ))}
