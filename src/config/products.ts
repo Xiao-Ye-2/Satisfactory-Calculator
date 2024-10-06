@@ -50,10 +50,10 @@ export const productList = [
       "name": "Aluminum Scrap"
     },
     {
-      "id": "AluminumSheet",
+      "id": "AluminumPlate",
       "imagePath": "/images/AluminiumSheet.png",
       "isIngredient": false,
-      "name": "Aluminum Sheet"
+      "name": "Aluminum Plate"
     },
     {
       "id": "AssemblyDirectorSystem",
@@ -98,10 +98,10 @@ export const productList = [
       "name": "Biomass"
     },
     {
-      "id": "Cables",
+      "id": "Cable",
       "imagePath": "/images/Cables.png",
       "isIngredient": false,
-      "name": "Cables"
+      "name": "Cable"
     },
     {
       "id": "CateriumIngot",
@@ -224,10 +224,10 @@ export const productList = [
       "name": "Electromagnetic Control Rod"
     },
     {
-      "id": "EmptyCannister",
+      "id": "EmptyCanister",
       "imagePath": "/images/EmptyCannister.png",
       "isIngredient": false,
-      "name": "Empty Cannister"
+      "name": "Empty Canister"
     },
     {
       "id": "EncasedPlutoniumCell",
@@ -242,10 +242,10 @@ export const productList = [
       "name": "Encased Steel Beam"
     },
     {
-      "id": "Engine",
+      "id": "Motor",
       "imagePath": "/images/Engine.png",
       "isIngredient": false,
-      "name": "Engine"
+      "name": "Motor"
     },
     {
       "id": "ExoticMatter",
@@ -350,10 +350,10 @@ export const productList = [
       "name": "Hazmat Filter"
     },
     {
-      "id": "Heatsink",
+      "id": "HeatSink",
       "imagePath": "/images/Heatsink.png",
       "isIngredient": false,
-      "name": "Heatsink"
+      "name": "HeatSink"
     },
     {
       "id": "HighSpeedConnector",
@@ -392,22 +392,22 @@ export const productList = [
       "name": "Iron Ingot"
     },
     {
-      "id": "IronPlates",
+      "id": "IronPlate",
       "imagePath": "/images/IronPlates.png",
       "isIngredient": false,
-      "name": "Iron Plates"
+      "name": "Iron Plate"
     },
     {
-      "id": "IronRods",
+      "id": "IronRod",
       "imagePath": "/images/IronRods.png",
       "isIngredient": false,
-      "name": "Iron Rods"
+      "name": "Iron Rod"
     },
     {
-      "id": "IronScrews",
+      "id": "IronScrew",
       "imagePath": "/images/IronScrews.png",
       "isIngredient": false,
-      "name": "Iron Screws"
+      "name": "Iron Screw"
     },
     {
       "id": "Leaves",
@@ -416,52 +416,52 @@ export const productList = [
       "name": "Leaves"
     },
     {
-      "id": "LiquidAlumina_Pipe",
+      "id": "Alumina",
       "imagePath": "/images/LiquidAlumina_Pipe.png",
       "isIngredient": false,
-      "name": "Liquid Alumina Pipe"
+      "name": "Alumina"
     },
     {
-      "id": "LiquidBiofuel",
+      "id": "PackagedBiofuel",
       "imagePath": "/images/LiquidBiofuel.png",
       "isIngredient": false,
-      "name": "Liquid Biofuel"
+      "name": "Packaged Biofuel"
     },
     {
-      "id": "LiquidBiofuel_Pipe",
+      "id": "Biofuel",
       "imagePath": "/images/LiquidBiofuel_Pipe.png",
       "isIngredient": false,
-      "name": "Liquid Biofuel Pipe"
+      "name": "Biofuel"
     },
     {
-      "id": "LiquidFuel_Pipe",
+      "id": "Fuel",
       "imagePath": "/images/LiquidFuel_Pipe.png",
       "isIngredient": false,
-      "name": "Liquid Fuel Pipe"
+      "name": "Fuel"
     },
     {
-      "id": "LiquidHeavyOilResidue_Pipe",
+      "id": "HeavyOilResidue",
       "imagePath": "/images/LiquidHeavyOilResidue_Pipe.png",
       "isIngredient": false,
-      "name": "Liquid Heavy Oil Residue Pipe"
+      "name": "Heavy Oil Residue"
     },
     {
-      "id": "LiquidOil_Pipe",
+      "id": "Oil",
       "imagePath": "/images/LiquidOil_Pipe.png",
       "isIngredient": false,
-      "name": "Liquid Oil Pipe"
+      "name": "Oil"
     },
     {
-      "id": "LiquidSulfuricAcid_Pipe",
+      "id": "SulfuricAcid",
       "imagePath": "/images/LiquidSulfuricAcid_Pipe.png",
       "isIngredient": false,
-      "name": "Liquid Sulfuric Acid Pipe"
+      "name": "Sulfuric Acid"
     },
     {
-      "id": "LiquidTurboFuel_Pipe",
+      "id": "TurboFuel",
       "imagePath": "/images/LiquidTurboFuel_Pipe.png",
       "isIngredient": false,
-      "name": "Liquid Turbo Fuel Pipe"
+      "name": "Turbo Fuel"
     },
     {
       "id": "Water",
@@ -512,10 +512,10 @@ export const productList = [
       "name": "Non Fissile Uranium"
     },
     {
-      "id": "NuclearCell",
+      "id": "UraniumCell",
       "imagePath": "/images/NuclearCell.png",
       "isIngredient": false,
-      "name": "Nuclear Cell"
+      "name": "Uranium Cell"
     },
     {
       "id": "NuclearFuelRod",
@@ -542,16 +542,16 @@ export const productList = [
       "name": "Nuke"
     },
     {
-      "id": "CrudeOil",
+      "id": "PackagedOil",
       "imagePath": "/images/Oil.png",
       "isIngredient": true,
-      "name": "Crude Oil"
+      "name": "PackagedOil"
     },
     {
-      "id": "HeavyOilResidue",
+      "id": "PackagedOilResidue",
       "imagePath": "/images/OilResidue.png",
       "isIngredient": false,
-      "name": "Heavy Oil Residue"
+      "name": "Packaged Oil Residue"
     },
     {
       "id": "PackagedAluminaSolution",
@@ -566,10 +566,10 @@ export const productList = [
       "name": "Packaged Nitric Acid"
     },
     {
-      "id": "PackagedNitrogen",
+      "id": "PackagedNitrogenGas",
       "imagePath": "/images/PackagedNitrogen.png",
       "isIngredient": false,
-      "name": "Packaged Nitrogen"
+      "name": "Packaged Nitrogen Gas"
     },
     {
       "id": "PackagedRocketFuel",
@@ -584,10 +584,10 @@ export const productList = [
       "name": "Packaged Water"
     },
     {
-      "id": "PckagedSulphuricAcid",
+      "id": "PackagedSulfuricAcid",
       "imagePath": "/images/PckagedSulphuricAcid.png",
       "isIngredient": false,
-      "name": "Pckaged Sulphuric Acid"
+      "name": "Packaged Sulfuric Acid"
     },
     {
       "id": "PetroleumCoke",
@@ -704,10 +704,10 @@ export const productList = [
       "name": "Rebar"
     },
     {
-      "id": "ReinforcedIronPlates",
+      "id": "IronPlateReinforced",
       "imagePath": "/images/ReinforcedIronPlates.png",
       "isIngredient": false,
-      "name": "Reinforced Iron Plates"
+      "name": "Iron Plate Reinforced"
     },
     {
       "id": "Rifle",
@@ -776,34 +776,34 @@ export const productList = [
       "name": "Solid Biofuel"
     },
     {
-      "id": "SpelevatorPart_1",
+      "id": "SpaceElevatorPart_1",
       "imagePath": "/images/SpelevatorPart_1.png",
       "isIngredient": false,
-      "name": "Spelevator Part1"
+      "name": "Space Elevator Part1"
     },
     {
-      "id": "SpelevatorPart_2",
+      "id": "SpaceElevatorPart_2",
       "imagePath": "/images/SpelevatorPart_2.png",
       "isIngredient": false,
-      "name": "Spelevator Part2"
+      "name": "Space Elevator Part2"
     },
     {
-      "id": "SpelevatorPart_3",
+      "id": "SpaceElevatorPart_3",
       "imagePath": "/images/SpelevatorPart_3.png",
       "isIngredient": false,
-      "name": "Spelevator Part3"
+      "name": "Space Elevator Part3"
     },
     {
-      "id": "SpelevatorPart_4",
+      "id": "SpaceElevatorPart_4",
       "imagePath": "/images/SpelevatorPart_4.png",
       "isIngredient": false,
-      "name": "Spelevator Part4"
+      "name": "Space Elevator Part4"
     },
     {
-      "id": "SpelevatorPart_5",
+      "id": "SpaceElevatorPart_5",
       "imagePath": "/images/SpelevatorPart_5.png",
       "isIngredient": false,
-      "name": "Spelevator Part5"
+      "name": "Space Elevator Part5"
     },
     {
       "id": "Stator",

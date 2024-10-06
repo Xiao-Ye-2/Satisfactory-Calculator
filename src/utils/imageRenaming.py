@@ -17,5 +17,5 @@ def rename_images_in_folder(folder_path):
             print(f'Renamed: {filename} -> {new_filename}')
 
 
-images_folder = 'src/app/public/images'
+images_folder = 'public/machines'
 rename_images_in_folder(images_folder)

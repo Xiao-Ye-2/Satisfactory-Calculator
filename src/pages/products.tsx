@@ -15,7 +15,7 @@ const ProductPage: React.FC = () => {
         Aliens: productList.filter((product: ProductClass) =>
             ['Alien Protein', 'Alien DNA Capsule'].includes(product.name)
         ),
-        Nuclear: productList.filter((product: ProductClass) => product.id.includes('Nuclear')),
+        Nuclear: productList.filter((product: ProductClass) => product.id.includes('Nuclear') || product.id.includes('Uranium')),
         Spelevator: productList.filter((product: ProductClass) => product.id.includes('Spelevator')),
     };
 

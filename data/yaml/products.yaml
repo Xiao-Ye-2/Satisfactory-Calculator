@@ -30,10 +30,10 @@
   imagePath: /images/AluminiumScrap.png
   isIngredient: false
   name: Aluminum Scrap
-- id: AluminumSheet
+- id: AluminumPlate
   imagePath: /images/AluminiumSheet.png
   isIngredient: false
-  name: Aluminum Sheet
+  name: Aluminum Plate
 - id: AssemblyDirectorSystem
   imagePath: /images/AssemblyDirectorSystem.png
   isIngredient: false
@@ -62,10 +62,10 @@
   imagePath: /images/Biomass.png
   isIngredient: false
   name: Biomass
-- id: Cables
+- id: Cable
   imagePath: /images/Cables.png
   isIngredient: false
-  name: Cables
+  name: Cable
 - id: CateriumIngot
   imagePath: /images/CateriumIngot.png
   isIngredient: false
@@ -146,10 +146,10 @@
   imagePath: /images/ElectromagneticControlRod.png
   isIngredient: false
   name: Electromagnetic Control Rod
-- id: EmptyCannister
+- id: EmptyCanister
   imagePath: /images/EmptyCannister.png
   isIngredient: false
-  name: Empty Cannister
+  name: Empty Canister
 - id: EncasedPlutoniumCell
   imagePath: /images/EncasedPlutoniumCell.png
   isIngredient: false
@@ -158,10 +158,10 @@
   imagePath: /images/EncasedSteelBeam.png
   isIngredient: false
   name: Encased Steel Beam
-- id: Engine
+- id: Motor
   imagePath: /images/Engine.png
   isIngredient: false
-  name: Engine
+  name: Motor
 - id: ExoticMatter
   imagePath: /images/ExoticMatter.png
   isIngredient: false
@@ -230,10 +230,10 @@
   imagePath: /images/HazmatFilter.png
   isIngredient: false
   name: Hazmat Filter
-- id: Heatsink
+- id: HeatSink
   imagePath: /images/Heatsink.png
   isIngredient: false
-  name: Heatsink
+  name: HeatSink
 - id: HighSpeedConnector
   imagePath: /images/HighSpeedConnector.png
   isIngredient: false
@@ -258,54 +258,54 @@
   imagePath: /images/IronIngot.png
   isIngredient: false
   name: Iron Ingot
-- id: IronPlates
+- id: IronPlate
   imagePath: /images/IronPlates.png
   isIngredient: false
-  name: Iron Plates
-- id: IronRods
+  name: Iron Plate
+- id: IronRod
   imagePath: /images/IronRods.png
   isIngredient: false
-  name: Iron Rods
-- id: IronScrews
+  name: Iron Rod
+- id: IronScrew
   imagePath: /images/IronScrews.png
   isIngredient: false
-  name: Iron Screws
+  name: Iron Screw
 - id: Leaves
   imagePath: /images/Leaves.png
   isIngredient: true
   name: Leaves
-- id: LiquidAlumina_Pipe
+- id: Alumina
   imagePath: /images/LiquidAlumina_Pipe.png
   isIngredient: false
-  name: Liquid Alumina Pipe
-- id: LiquidBiofuel
+  name: Alumina
+- id: PackagedBiofuel
   imagePath: /images/LiquidBiofuel.png
   isIngredient: false
-  name: Liquid Biofuel
-- id: LiquidBiofuel_Pipe
+  name: Packaged Biofuel
+- id: Biofuel
   imagePath: /images/LiquidBiofuel_Pipe.png
   isIngredient: false
-  name: Liquid Biofuel Pipe
-- id: LiquidFuel_Pipe
+  name: Biofuel
+- id: Fuel
   imagePath: /images/LiquidFuel_Pipe.png
   isIngredient: false
-  name: Liquid Fuel Pipe
-- id: LiquidHeavyOilResidue_Pipe
+  name: Fuel
+- id: HeavyOilResidue
   imagePath: /images/LiquidHeavyOilResidue_Pipe.png
   isIngredient: false
-  name: Liquid Heavy Oil Residue Pipe
-- id: LiquidOil_Pipe
+  name: Heavy Oil Residue
+- id: Oil
   imagePath: /images/LiquidOil_Pipe.png
   isIngredient: false
-  name: Liquid Oil Pipe
-- id: LiquidSulfuricAcid_Pipe
+  name: Oil
+- id: SulfuricAcid
   imagePath: /images/LiquidSulfuricAcid_Pipe.png
   isIngredient: false
-  name: Liquid Sulfuric Acid Pipe
-- id: LiquidTurboFuel_Pipe
+  name: Sulfuric Acid
+- id: TurboFuel
   imagePath: /images/LiquidTurboFuel_Pipe.png
   isIngredient: false
-  name: Liquid Turbo Fuel Pipe
+  name: Turbo Fuel
 - id: Water
   imagePath: /images/LiquidWater_Pipe.png
   isIngredient: true
@@ -338,10 +338,10 @@
   imagePath: /images/NonFissileUranium.png
   isIngredient: false
   name: Non Fissile Uranium
-- id: NuclearCell
+- id: UraniumCell
   imagePath: /images/NuclearCell.png
   isIngredient: false
-  name: Nuclear Cell
+  name: Uranium Cell
 - id: NuclearFuelRod
   imagePath: /images/NuclearFuelRod.png
   isIngredient: false
@@ -358,14 +358,14 @@
   imagePath: /images/Nuke.png
   isIngredient: false
   name: Nuke
-- id: CrudeOil
+- id: PackagedOil
   imagePath: /images/Oil.png
   isIngredient: true
-  name: Crude Oil
-- id: HeavyOilResidue
+  name: PackagedOil
+- id: PackagedOilResidue
   imagePath: /images/OilResidue.png
   isIngredient: false
-  name: Heavy Oil Residue
+  name: Packaged Oil Residue
 - id: PackagedAluminaSolution
   imagePath: /images/PackagedAluminaSolution.png
   isIngredient: false
@@ -374,10 +374,10 @@
   imagePath: /images/PackagedNitricAcid.png
   isIngredient: false
   name: Packaged Nitric Acid
-- id: PackagedNitrogen
+- id: PackagedNitrogenGas
   imagePath: /images/PackagedNitrogen.png
   isIngredient: false
-  name: Packaged Nitrogen
+  name: Packaged Nitrogen Gas
 - id: PackagedRocketFuel
   imagePath: /images/PackagedRocketFuel.png
   isIngredient: false
@@ -386,10 +386,10 @@
   imagePath: /images/PackagedWater.png
   isIngredient: false
   name: Packaged Water
-- id: PckagedSulphuricAcid
+- id: PackagedSulfuricAcid
   imagePath: /images/PckagedSulphuricAcid.png
   isIngredient: false
-  name: Pckaged Sulphuric Acid
+  name: Packaged Sulfuric Acid
 - id: PetroleumCoke
   imagePath: /images/PetroleumCoke.png
   isIngredient: false
@@ -466,10 +466,10 @@
   imagePath: /images/Rebar.png
   isIngredient: false
   name: Rebar
-- id: ReinforcedIronPlates
+- id: IronPlateReinforced
   imagePath: /images/ReinforcedIronPlates.png
   isIngredient: false
-  name: Reinforced Iron Plates
+  name: Iron Plate Reinforced
 - id: Rifle
   imagePath: /images/Rifle.png
   isIngredient: false
@@ -514,26 +514,26 @@
   imagePath: /images/SolidBiofuel.png
   isIngredient: false
   name: Solid Biofuel
-- id: SpelevatorPart_1
+- id: SpaceElevatorPart_1
   imagePath: /images/SpelevatorPart_1.png
   isIngredient: false
-  name: Spelevator Part1
-- id: SpelevatorPart_2
+  name: Space Elevator Part1
+- id: SpaceElevatorPart_2
   imagePath: /images/SpelevatorPart_2.png
   isIngredient: false
-  name: Spelevator Part2
-- id: SpelevatorPart_3
+  name: Space Elevator Part2
+- id: SpaceElevatorPart_3
   imagePath: /images/SpelevatorPart_3.png
   isIngredient: false
-  name: Spelevator Part3
-- id: SpelevatorPart_4
+  name: Space Elevator Part3
+- id: SpaceElevatorPart_4
   imagePath: /images/SpelevatorPart_4.png
   isIngredient: false
-  name: Spelevator Part4
-- id: SpelevatorPart_5
+  name: Space Elevator Part4
+- id: SpaceElevatorPart_5
   imagePath: /images/SpelevatorPart_5.png
   isIngredient: false
-  name: Spelevator Part5
+  name: Space Elevator Part5
 - id: Stator
   imagePath: /images/Stator.png
   isIngredient: false
