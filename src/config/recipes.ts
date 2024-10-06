@@ -22,7 +22,7 @@ export const recipesYAML = [
       "id": "copper_wire",
       "inputs": [
         {
-          "productId": "copper",
+          "productId": "Copper",
           "quantity": 1
         }
       ],
@@ -39,7 +39,7 @@ export const recipesYAML = [
       "id": "copper_wire22",
       "inputs": [
         {
-          "productId": "copper",
+          "productId": "Copper",
           "quantity": 2
         }
       ],

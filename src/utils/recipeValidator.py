@@ -3,16 +3,20 @@ import os
 
 products_file_path = 'data/yaml/products.yaml'
 recipes_file_path = 'data/yaml/recipes.yaml'
+machines_file_path = 'data/yaml/machines.yaml'
 
-# Load products from the YAML file
+# Load products, recipes, and machines from the YAML files
 with open(products_file_path, 'r') as products_file:
     products = yaml.safe_load(products_file)
 
-# Load recipes from the YAML file
 with open(recipes_file_path, 'r') as recipes_file:
     recipes = yaml.safe_load(recipes_file)
 
+with open(machines_file_path, 'r') as machines_file:
+    machines = yaml.safe_load(machines_file)
+
 valid_product_ids = {product['id'] for product in products}
+valid_machine_ids = {machine['id'] for machine in machines}
 recipe_ids = set()
 duplicate_recipes = []
 
@@ -34,6 +38,10 @@ for recipe in recipes:
     for output_item in recipe['outputs']:
         if output_item['productId'] not in valid_product_ids:
             print(f"Invalid output in recipe '{recipe_id}': {output_item['productId']}")
+
+    # Check machine
+    if recipe['machineId'] not in valid_machine_ids:
+        print(f"Invalid machine in recipe '{recipe_id}': {recipe['machineId']}")
 
 if duplicate_recipes:
     print("Duplicate recipe IDs found:")

@@ -6,10 +6,10 @@
   imagePath: /images/AILimiter.png
   isIngredient: false
   name: AI Limiter
-- id: AlienDNA
+- id: AlienDNACapsule
   imagePath: /images/AlienDNA.png
   isIngredient: false
-  name: Alien DNA
+  name: Alien DNA Capsule
 - id: AlienPowerMatrix
   imagePath: /images/AlienPowerMatrix.png
   isIngredient: false
@@ -18,22 +18,22 @@
   imagePath: /images/AlienProtein.png
   isIngredient: false
   name: Alien Protein
-- id: AluminiumCasing
+- id: AluminumCasing
   imagePath: /images/AluminiumCasing.png
   isIngredient: false
-  name: Aluminium Casing
-- id: AluminiumIngot
+  name: Aluminum Casing
+- id: AluminumIngot
   imagePath: /images/AluminiumIngot.png
   isIngredient: false
-  name: Aluminium Ingot
-- id: AluminiumScrap
+  name: Aluminum Ingot
+- id: AluminumScrap
   imagePath: /images/AluminiumScrap.png
   isIngredient: false
-  name: Aluminium Scrap
-- id: AluminiumSheet
+  name: Aluminum Scrap
+- id: AluminumSheet
   imagePath: /images/AluminiumSheet.png
   isIngredient: false
-  name: Aluminium Sheet
+  name: Aluminum Sheet
 - id: AssemblyDirectorSystem
   imagePath: /images/AssemblyDirectorSystem.png
   isIngredient: false
@@ -48,7 +48,7 @@
   name: Battery
 - id: Bauxite
   imagePath: /images/Bauxite.png
-  isIngredient: false
+  isIngredient: true
   name: Bauxite
 - id: Beacon
   imagePath: /images/Beacon.png
@@ -72,7 +72,7 @@
   name: Caterium Ingot
 - id: CateriumOre
   imagePath: /images/CateriumOre.png
-  isIngredient: false
+  isIngredient: true
   name: Caterium Ore
 - id: CircuitBoard
   imagePath: /images/CircuitBoard.png
@@ -82,10 +82,10 @@
   imagePath: /images/Cluster.png
   isIngredient: false
   name: Cluster
-- id: CoalOre
+- id: Coal
   imagePath: /images/CoalOre.png
-  isIngredient: false
-  name: Coal Ore
+  isIngredient: true
+  name: Coal
 - id: ColorCartridge
   imagePath: /images/ColorCartridge.png
   isIngredient: false
@@ -110,14 +110,14 @@
   imagePath: /images/CoolingSystem.png
   isIngredient: false
   name: Cooling System
-- id: copper
+- id: Copper
   imagePath: /images/copper.png
-  isIngredient: false
-  name: copper
-- id: CopperDust
+  isIngredient: true
+  name: Copper Ore
+- id: CopperPowder
   imagePath: /images/CopperDust.png
   isIngredient: false
-  name: Copper Dust
+  name: Copper Powder
 - id: CopperIngot
   imagePath: /images/CopperIngot.png
   isIngredient: false
@@ -188,7 +188,7 @@
   name: Ficsite Mesh
 - id: Ficsit_Coupon
   imagePath: /images/Ficsit_Coupon.png
-  isIngredient: false
+  isIngredient: true
   name: Ficsit Coupon
 - id: FicsoniumCell
   imagePath: /images/FicsoniumCell.png
@@ -250,10 +250,10 @@
   imagePath: /images/IonizedRocketFuel.png
   isIngredient: false
   name: Ionized Rocket Fuel
-- id: iron
+- id: Iron
   imagePath: /images/iron.png
-  isIngredient: false
-  name: iron
+  isIngredient: true
+  name: Iron Ore
 - id: IronIngot
   imagePath: /images/IronIngot.png
   isIngredient: false
@@ -272,7 +272,7 @@
   name: Iron Screws
 - id: Leaves
   imagePath: /images/Leaves.png
-  isIngredient: false
+  isIngredient: true
   name: Leaves
 - id: LiquidAlumina_Pipe
   imagePath: /images/LiquidAlumina_Pipe.png
@@ -306,10 +306,10 @@
   imagePath: /images/LiquidTurboFuel_Pipe.png
   isIngredient: false
   name: Liquid Turbo Fuel Pipe
-- id: LiquidWater_Pipe
+- id: Water
   imagePath: /images/LiquidWater_Pipe.png
-  isIngredient: false
-  name: Liquid Water Pipe
+  isIngredient: true
+  name: Water
 - id: MagneticFieldGenerator
   imagePath: /images/MagneticFieldGenerator.png
   isIngredient: false
@@ -324,7 +324,7 @@
   name: Modular Frame Heavy
 - id: Mycelia
   imagePath: /images/Mycelia.png
-  isIngredient: false
+  isIngredient: true
   name: Mycelia
 - id: NitricAcid
   imagePath: /images/NitricAcid.png
@@ -358,14 +358,14 @@
   imagePath: /images/Nuke.png
   isIngredient: false
   name: Nuke
-- id: Oil
+- id: CrudeOil
   imagePath: /images/Oil.png
-  isIngredient: false
-  name: Oil
-- id: OilResidue
+  isIngredient: true
+  name: Crude Oil
+- id: HeavyOilResidue
   imagePath: /images/OilResidue.png
   isIngredient: false
-  name: Oil Residue
+  name: Heavy Oil Residue
 - id: PackagedAluminaSolution
   imagePath: /images/PackagedAluminaSolution.png
   isIngredient: false
@@ -442,14 +442,14 @@
   imagePath: /images/QuantumEnergy.png
   isIngredient: false
   name: Quantum Energy
-- id: QuartzCrystal
+- id: RawQuartz
   imagePath: /images/QuartzCrystal.png
-  isIngredient: false
-  name: Quartz Crystal
+  isIngredient: true
+  name: Raw Quartz
 - id: QuartzResource
   imagePath: /images/QuartzResource.png
   isIngredient: false
-  name: Quartz Resource
+  name: QuartzResource
 - id: Quickwire
   imagePath: /images/Quickwire.png
   isIngredient: false
@@ -490,10 +490,10 @@
   imagePath: /images/SamFluctuator.png
   isIngredient: false
   name: Sam Fluctuator
-- id: SAMOre
+- id: SAM
   imagePath: /images/SAMOre.png
-  isIngredient: false
-  name: S A M Ore
+  isIngredient: true
+  name: SAM
 - id: ScatterRebar
   imagePath: /images/ScatterRebar.png
   isIngredient: false
@@ -550,17 +550,17 @@
   imagePath: /images/SteelPipe.png
   isIngredient: false
   name: Steel Pipe
-- id: Stone
+- id: Limestone
   imagePath: /images/Stone.png
-  isIngredient: false
-  name: Stone
+  isIngredient: true
+  name: Limestone
 - id: StunRebar
   imagePath: /images/StunRebar.png
   isIngredient: false
   name: Stun Rebar
 - id: Sulfur
   imagePath: /images/Sulfur.png
-  isIngredient: false
+  isIngredient: true
   name: Sulfur
 - id: SuperComputer
   imagePath: /images/SuperComputer.png
@@ -594,15 +594,15 @@
   imagePath: /images/TurboRifle.png
   isIngredient: false
   name: Turbo Rifle
-- id: UraniumOre
+- id: Uranium
   imagePath: /images/UraniumOre.png
-  isIngredient: false
-  name: Uranium Ore
+  isIngredient: true
+  name: Uranium
 - id: Wire
   imagePath: /images/Wire.png
   isIngredient: false
   name: Wire
 - id: Wood
   imagePath: /images/Wood.png
-  isIngredient: false
+  isIngredient: true
   name: Wood

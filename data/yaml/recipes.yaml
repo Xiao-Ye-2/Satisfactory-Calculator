@@ -9,7 +9,7 @@
   isDefault: true
 - id: "copper_wire"
   inputs:
-    - productId: "copper"
+    - productId: "Copper"
       quantity: 1
   outputs:
     - productId: "Quickwire"
@@ -18,7 +18,7 @@
   isDefault: true
 - id: "copper_wire2"
   inputs:
-    - productId: "copper"
+    - productId: "Copper"
       quantity: 1
   outputs:
     - productId: "Quickwire"

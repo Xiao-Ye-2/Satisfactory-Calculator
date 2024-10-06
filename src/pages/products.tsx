@@ -1,36 +1,49 @@
-import { ProductClass } from "@/models/Product";
+import { ProductClass } from '@/models/Product';
 import { productList } from '@/config/products';
+import ProductSection from '@/components/ProductSection';
+
 
 const ProductPage: React.FC = () => {
-  const productCategories = {
-    Ingredients: productList.filter((product: ProductClass) => product.isIngredient),
-    Others: productList.filter((product: ProductClass) => !product.isIngredient),
-  };
+    const initialCategories = {
+        Ores: productList.filter((product: ProductClass) =>
+            product.isIngredient && !['Water', 'Crude Oil', 'Ficsit Coupon', 'Leaves', 'Mycelia', 'Wood'].includes(product.name)
+        ),
+        Ingots: productList.filter((product: ProductClass) => product.id.includes('Ingot')),
+        Minerals: productList.filter((product: ProductClass) =>
+            ['Concrete', 'Quartz Crystal', 'Silica', 'Copper Powder', 'Polymer Resin', 'Petroleum Coke', 'Aluminum Scrap'].includes(product.name)
+        ),
+        Aliens: productList.filter((product: ProductClass) =>
+            ['Alien Protein', 'Alien DNA Capsule'].includes(product.name)
+        ),
+        Nuclear: productList.filter((product: ProductClass) => product.id.includes('Nuclear')),
+        Spelevator: productList.filter((product: ProductClass) => product.id.includes('Spelevator')),
+    };
 
-  return (
-    <div className="p-4">
-      {Object.entries(productCategories).map(
-        ([sectionName, sectionProducts]) =>
-          sectionProducts.length > 0 && (
-            <div key={sectionName}>
-              <h2 className="text-xl font-semibold mb-4">{sectionName}</h2>
-              <div className="grid grid-cols-3 gap-4">
-                {sectionProducts.map((product: ProductClass) => (
-                  <div key={product.id} className="border rounded-md p-4 shadow-md">
-                    <img
-                      src={product.imagePath}
-                      alt={product.name}
-                      className="w-full h-32 object-cover mb-2"
-                    />
-                    <h3 className="text-lg font-medium">{product.name}</h3>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )
-      )}
-    </div>
-  );
+    const otherProducts = productList.filter((product: ProductClass) =>
+        !Object.values(initialCategories).some((category) =>
+            category.includes(product)
+        )
+    );
+
+    const productCategories = {
+        ...initialCategories,
+        Other: otherProducts,
+    };
+
+    return (
+        <div className="p-4">
+        {Object.entries(productCategories).map(([sectionName, sectionProducts]) => (
+            sectionProducts.length > 0 && (
+            <ProductSection
+                key={sectionName}
+                sectionName={sectionName}
+                sectionProducts={sectionProducts}
+                headingClass='text-3xl font-extrabold mb-4 text-gray-800 shadow-md p-2 rounded-lg bg-gray-100'
+            />
+            )
+        ))}
+        </div>
+    );
 };
 
 export default ProductPage;
