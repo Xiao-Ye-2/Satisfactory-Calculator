@@ -42,13 +42,8 @@ export const machineList = [
       "basePower": 10
     },
     {
-      "id": "ParticleAcceleratorLowPower",
-      "name": "Particle Accelerator",
-      "basePower": 250
-    },
-    {
-      "id": "ParticleAcceleratorHighPower",
-      "name": "Particle Accelerator",
+      "id": "HadronCollider",
+      "name": "Hadron Collider",
       "basePower": 500
     },
     {

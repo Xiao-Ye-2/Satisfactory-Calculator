@@ -2,7 +2,7 @@ import { RecipeYAML } from "@/models/types";
 
 export const recipesYAML = [
     {
-      "id": "AILimiter",
+      "id": "ai-limiter",
       "inputs": [
         {
           "productId": "CopperSheet",
@@ -14,16 +14,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "AI Limiter",
       "outputs": [
         {
           "productId": "AILimiter",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_AdheredIronPlate",
+      "id": "alternate-adhered-iron-plate",
       "inputs": [
         {
           "productId": "IronPlate",
@@ -35,16 +38,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Adhered Iron Plate",
       "outputs": [
         {
           "productId": "IronPlateReinforced",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 16
     },
     {
-      "id": "Alternate_AlcladCasing",
+      "id": "alternate-alclad-casing",
       "inputs": [
         {
           "productId": "AluminumIngot",
@@ -56,16 +62,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Alclad Casing",
       "outputs": [
         {
           "productId": "AluminumCasing",
           "quantity": 15
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "Alternate_Beacon_1",
+      "id": "alternate-crystal-beacon",
       "inputs": [
         {
           "productId": "SteelBeam",
@@ -81,16 +90,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Crystal Beacon",
       "outputs": [
         {
           "productId": "Beacon",
           "quantity": 20
         }
-      ]
+      ],
+      "time": 120
     },
     {
-      "id": "Alternate_BoltedFrame",
+      "id": "alternate-bolted-frame",
       "inputs": [
         {
           "productId": "IronPlateReinforced",
@@ -102,16 +114,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Bolted Frame",
       "outputs": [
         {
           "productId": "ModularFrame",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "Alternate_Cable_1",
+      "id": "alternate-insulated-cable",
       "inputs": [
         {
           "productId": "Wire",
@@ -123,16 +138,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Insulated Cable",
       "outputs": [
         {
           "productId": "Cable",
           "quantity": 20
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_Cable_2",
+      "id": "alternate-quickwire-cable",
       "inputs": [
         {
           "productId": "Quickwire",
@@ -144,16 +162,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Quickwire Cable",
       "outputs": [
         {
           "productId": "Cable",
           "quantity": 11
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "Alternate_CircuitBoard_1",
+      "id": "alternate-silicon-circuit-board",
       "inputs": [
         {
           "productId": "CopperSheet",
@@ -165,16 +186,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Silicon Circuit Board",
       "outputs": [
         {
           "productId": "CircuitBoard",
           "quantity": 5
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "Alternate_CircuitBoard_2",
+      "id": "alternate-caterium-circuit-board",
       "inputs": [
         {
           "productId": "Plastic",
@@ -186,16 +210,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Caterium Circuit Board",
       "outputs": [
         {
           "productId": "CircuitBoard",
           "quantity": 7
         }
-      ]
+      ],
+      "time": 48
     },
     {
-      "id": "Alternate_ClassicBattery",
+      "id": "alternate-classic-battery",
       "inputs": [
         {
           "productId": "Sulfur",
@@ -215,16 +242,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Classic Battery",
       "outputs": [
         {
           "productId": "Battery",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "Alternate_Coal_1",
+      "id": "alternate-charcoal",
       "inputs": [
         {
           "productId": "Wood",
@@ -232,16 +262,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Alternate: Charcoal",
       "outputs": [
         {
           "productId": "Coal",
           "quantity": 10
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "Alternate_Coal_2",
+      "id": "alternate-biocoal",
       "inputs": [
         {
           "productId": "Biomass",
@@ -249,16 +282,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Alternate: Biocoal",
       "outputs": [
         {
           "productId": "Coal",
           "quantity": 6
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "Alternate_CoatedCable",
+      "id": "alternate-coated-cable",
       "inputs": [
         {
           "productId": "Wire",
@@ -270,16 +306,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Coated Cable",
       "outputs": [
         {
           "productId": "Cable",
           "quantity": 9
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "Alternate_CoatedIronCanister",
+      "id": "alternate-coated-iron-canister",
       "inputs": [
         {
           "productId": "IronPlate",
@@ -291,16 +330,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Coated Iron Canister",
       "outputs": [
         {
           "productId": "EmptyCanister",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "Alternate_CoatedIronPlate",
+      "id": "alternate-coated-iron-plate",
       "inputs": [
         {
           "productId": "IronIngot",
@@ -312,16 +354,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Coated Iron Plate",
       "outputs": [
         {
           "productId": "IronPlate",
           "quantity": 15
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_CokeSteelIngot",
+      "id": "alternate-coke-steel-ingot",
       "inputs": [
         {
           "productId": "Iron",
@@ -333,16 +378,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Foundry",
+      "name": "Alternate: Coke Steel Ingot",
       "outputs": [
         {
           "productId": "SteelIngot",
           "quantity": 20
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_Computer_1",
+      "id": "alternate-caterium-computer",
       "inputs": [
         {
           "productId": "CircuitBoard",
@@ -358,16 +406,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Caterium Computer",
       "outputs": [
         {
           "productId": "Computer",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 16
     },
     {
-      "id": "Alternate_Computer_2",
+      "id": "alternate-crystal-computer",
       "inputs": [
         {
           "productId": "CircuitBoard",
@@ -379,16 +430,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Crystal Computer",
       "outputs": [
         {
           "productId": "Computer",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 64
     },
     {
-      "id": "Alternate_Concrete",
+      "id": "alternate-fine-concrete",
       "inputs": [
         {
           "productId": "Silica",
@@ -400,16 +454,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Fine Concrete",
       "outputs": [
         {
           "productId": "Concrete",
           "quantity": 10
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "Alternate_CoolingDevice",
+      "id": "alternate-cooling-device",
       "inputs": [
         {
           "productId": "HeatSink",
@@ -425,16 +482,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Blender",
+      "name": "Alternate: Cooling Device",
       "outputs": [
         {
           "productId": "CoolingSystem",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 32
     },
     {
-      "id": "Alternate_CopperAlloyIngot",
+      "id": "alternate-copper-alloy-ingot",
       "inputs": [
         {
           "productId": "Copper",
@@ -446,16 +506,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Foundry",
+      "name": "Alternate: Copper Alloy Ingot",
       "outputs": [
         {
           "productId": "CopperIngot",
           "quantity": 20
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_CopperRotor",
+      "id": "alternate-copper-rotor",
       "inputs": [
         {
           "productId": "CopperSheet",
@@ -467,19 +530,22 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Copper Rotor",
       "outputs": [
         {
           "productId": "Rotor",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 16
     },
     {
-      "id": "Alternate_CrystalOscillator",
+      "id": "alternate-insulated-crystal-oscillator",
       "inputs": [
         {
-          "productId": "RawQuartz",
+          "productId": "QuartzResource",
           "quantity": 10
         },
         {
@@ -492,16 +558,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Insulated Crystal Oscillator",
       "outputs": [
         {
           "productId": "CrystalOscillator",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 32
     },
     {
-      "id": "Alternate_DilutedFuel",
+      "id": "alternate-diluted-fuel",
       "inputs": [
         {
           "productId": "HeavyOilResidue",
@@ -513,16 +582,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Blender",
+      "name": "Alternate: Diluted Fuel",
       "outputs": [
         {
           "productId": "Fuel",
           "quantity": 10
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "Alternate_DilutedPackagedFuel",
+      "id": "alternate-diluted-packaged-fuel",
       "inputs": [
         {
           "productId": "HeavyOilResidue",
@@ -534,16 +606,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Diluted Packaged Fuel",
       "outputs": [
         {
           "productId": "Fuel",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 2
     },
     {
-      "id": "Alternate_ElectricMotor",
+      "id": "alternate-electric-motor",
       "inputs": [
         {
           "productId": "ElectromagneticControlRod",
@@ -555,16 +630,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Electric Motor",
       "outputs": [
         {
           "productId": "Motor",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 16
     },
     {
-      "id": "Alternate_ElectroAluminumScrap",
+      "id": "alternate-electrode---aluminum-scrap",
       "inputs": [
         {
           "productId": "Alumina",
@@ -576,7 +654,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Electrode - Aluminum Scrap",
       "outputs": [
         {
           "productId": "AluminumScrap",
@@ -586,10 +666,11 @@ export const recipesYAML = [
           "productId": "Water",
           "quantity": 7
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "Alternate_ElectrodeCircuitBoard",
+      "id": "alternate-electrode-circuit-board",
       "inputs": [
         {
           "productId": "Rubber",
@@ -601,16 +682,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Electrode Circuit Board",
       "outputs": [
         {
           "productId": "CircuitBoard",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_ElectromagneticControlRod_1",
+      "id": "alternate-electromagnetic-connection-rod",
       "inputs": [
         {
           "productId": "Stator",
@@ -622,16 +706,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Electromagnetic Connection Rod",
       "outputs": [
         {
           "productId": "ElectromagneticControlRod",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 15
     },
     {
-      "id": "Alternate_EncasedIndustrialBeam",
+      "id": "alternate-encased-industrial-pipe",
       "inputs": [
         {
           "productId": "SteelPipe",
@@ -643,16 +730,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Encased Industrial Pipe",
       "outputs": [
         {
           "productId": "EncasedSteelBeam",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 15
     },
     {
-      "id": "Alternate_EnrichedCoal",
+      "id": "alternate-compacted-coal",
       "inputs": [
         {
           "productId": "Coal",
@@ -664,16 +754,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Compacted Coal",
       "outputs": [
         {
           "productId": "CompactedCoal",
           "quantity": 5
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_FertileUranium",
+      "id": "alternate-fertile-uranium",
       "inputs": [
         {
           "productId": "Uranium",
@@ -693,7 +786,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Blender",
+      "name": "Alternate: Fertile Uranium",
       "outputs": [
         {
           "productId": "NonFissileUranium",
@@ -703,10 +798,11 @@ export const recipesYAML = [
           "productId": "Water",
           "quantity": 8
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_FlexibleFramework",
+      "id": "alternate-flexible-framework",
       "inputs": [
         {
           "productId": "ModularFrame",
@@ -722,16 +818,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Flexible Framework",
       "outputs": [
         {
           "productId": "SpaceElevatorPart_2",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 16
     },
     {
-      "id": "Alternate_FusedWire",
+      "id": "alternate-fused-wire",
       "inputs": [
         {
           "productId": "CopperIngot",
@@ -743,16 +842,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Fused Wire",
       "outputs": [
         {
           "productId": "Wire",
           "quantity": 30
         }
-      ]
+      ],
+      "time": 20
     },
     {
-      "id": "Alternate_Gunpowder_1",
+      "id": "alternate-fine-black-powder",
       "inputs": [
         {
           "productId": "Sulfur",
@@ -764,16 +866,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Fine Black Powder",
       "outputs": [
         {
           "productId": "Gunpowder",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 16
     },
     {
-      "id": "Alternate_HeatFusedFrame",
+      "id": "alternate-heat-fused-frame",
       "inputs": [
         {
           "productId": "ModularFrameHeavy",
@@ -793,16 +898,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Blender",
+      "name": "Alternate: Heat-Fused Frame",
       "outputs": [
         {
           "productId": "FusedModularFrame",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 20
     },
     {
-      "id": "Alternate_HeatSink_1",
+      "id": "alternate-heat-exchanger",
       "inputs": [
         {
           "productId": "AluminumCasing",
@@ -814,16 +922,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Heat Exchanger",
       "outputs": [
         {
           "productId": "HeatSink",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "Alternate_HeavyFlexibleFrame",
+      "id": "alternate-heavy-flexible-frame",
       "inputs": [
         {
           "productId": "ModularFrame",
@@ -843,16 +954,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Heavy Flexible Frame",
       "outputs": [
         {
           "productId": "ModularFrameHeavy",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 16
     },
     {
-      "id": "Alternate_HeavyOilResidue",
+      "id": "alternate-heavy-oil-residue",
       "inputs": [
         {
           "productId": "Oil",
@@ -860,7 +974,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Heavy Oil Residue",
       "outputs": [
         {
           "productId": "HeavyOilResidue",
@@ -870,10 +986,11 @@ export const recipesYAML = [
           "productId": "PolymerResin",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "Alternate_HighSpeedConnector",
+      "id": "alternate-silicon-high-speed-connector",
       "inputs": [
         {
           "productId": "Quickwire",
@@ -889,16 +1006,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Silicon High-Speed Connector",
       "outputs": [
         {
           "productId": "HighSpeedConnector",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 40
     },
     {
-      "id": "Alternate_HighSpeedWiring",
+      "id": "alternate-automated-speed-wiring",
       "inputs": [
         {
           "productId": "Stator",
@@ -914,16 +1034,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Automated Speed Wiring",
       "outputs": [
         {
           "productId": "SpaceElevatorPart_3",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 32
     },
     {
-      "id": "Alternate_IngotIron",
+      "id": "alternate-iron-alloy-ingot",
       "inputs": [
         {
           "productId": "Iron",
@@ -935,16 +1058,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Foundry",
+      "name": "Alternate: Iron Alloy Ingot",
       "outputs": [
         {
           "productId": "IronIngot",
           "quantity": 5
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "Alternate_IngotSteel_1",
+      "id": "alternate-solid-steel-ingot",
       "inputs": [
         {
           "productId": "IronIngot",
@@ -956,16 +1082,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Foundry",
+      "name": "Alternate: Solid Steel Ingot",
       "outputs": [
         {
           "productId": "SteelIngot",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 3
     },
     {
-      "id": "Alternate_IngotSteel_2",
+      "id": "alternate-compacted-steel-ingot",
       "inputs": [
         {
           "productId": "Iron",
@@ -977,16 +1106,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Foundry",
+      "name": "Alternate: Compacted Steel Ingot",
       "outputs": [
         {
           "productId": "SteelIngot",
           "quantity": 10
         }
-      ]
+      ],
+      "time": 16
     },
     {
-      "id": "Alternate_EncasedPlutoniumCell",
+      "id": "alternate-instant-plutonium-cell",
       "inputs": [
         {
           "productId": "NonFissileUranium",
@@ -998,16 +1130,21 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
-      "machineId": "ParticleAcceleratorLowPower",
+      "isVariablePower": true,
+      "machineId": "HadronCollider",
+      "maxPower": 750,
+      "minPower": 250,
+      "name": "Alternate: Instant Plutonium Cell",
       "outputs": [
         {
           "productId": "EncasedPlutoniumCell",
           "quantity": 20
         }
-      ]
+      ],
+      "time": 120
     },
     {
-      "id": "Alternate_InstantScrap",
+      "id": "alternate-instant-scrap",
       "inputs": [
         {
           "productId": "Bauxite",
@@ -1027,7 +1164,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Blender",
+      "name": "Alternate: Instant Scrap",
       "outputs": [
         {
           "productId": "AluminumScrap",
@@ -1037,10 +1176,11 @@ export const recipesYAML = [
           "productId": "Water",
           "quantity": 5
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "Alternate_ModularFrameHeavy",
+      "id": "alternate-heavy-encased-frame",
       "inputs": [
         {
           "productId": "ModularFrame",
@@ -1060,16 +1200,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Heavy Encased Frame",
       "outputs": [
         {
           "productId": "ModularFrameHeavy",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 64
     },
     {
-      "id": "Alternate_ModularFrame",
+      "id": "alternate-steeled-frame",
       "inputs": [
         {
           "productId": "IronPlateReinforced",
@@ -1081,16 +1224,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Steeled Frame",
       "outputs": [
         {
           "productId": "ModularFrame",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 60
     },
     {
-      "id": "Alternate_Motor_1",
+      "id": "alternate-rigour-motor",
       "inputs": [
         {
           "productId": "Rotor",
@@ -1106,16 +1252,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Rigour Motor",
       "outputs": [
         {
           "productId": "Motor",
           "quantity": 6
         }
-      ]
+      ],
+      "time": 48
     },
     {
-      "id": "Alternate_Nobelisk_1",
+      "id": "alternate-seismic-nobelisk",
       "inputs": [
         {
           "productId": "Gunpowder",
@@ -1131,16 +1280,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Seismic Nobelisk",
       "outputs": [
         {
           "productId": "Explosive",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 40
     },
     {
-      "id": "Alternate_NuclearFuelRod_1",
+      "id": "alternate-uranium-fuel-unit",
       "inputs": [
         {
           "productId": "UraniumCell",
@@ -1160,16 +1312,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Uranium Fuel Unit",
       "outputs": [
         {
           "productId": "NuclearFuelRod",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 300
     },
     {
-      "id": "Alternate_OCSupercomputer",
+      "id": "alternate-oc-supercomputer",
       "inputs": [
         {
           "productId": "RadioControlUnit",
@@ -1181,16 +1336,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: OC Supercomputer",
       "outputs": [
         {
           "productId": "SuperComputer",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 20
     },
     {
-      "id": "Alternate_PlasticSmartPlating",
+      "id": "alternate-plastic-smart-plating",
       "inputs": [
         {
           "productId": "IronPlateReinforced",
@@ -1206,16 +1364,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Plastic Smart Plating",
       "outputs": [
         {
           "productId": "SpaceElevatorPart_1",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "Alternate_Plastic_1",
+      "id": "alternate-recycled-plastic",
       "inputs": [
         {
           "productId": "Rubber",
@@ -1227,16 +1388,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Recycled Plastic",
       "outputs": [
         {
           "productId": "Plastic",
           "quantity": 12
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_PlutoniumFuelUnit",
+      "id": "alternate-plutonium-fuel-unit",
       "inputs": [
         {
           "productId": "EncasedPlutoniumCell",
@@ -1248,16 +1412,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Plutonium Fuel Unit",
       "outputs": [
         {
           "productId": "PlutoniumFuelRod",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 120
     },
     {
-      "id": "Alternate_PolyesterFabric",
+      "id": "alternate-polyester-fabric",
       "inputs": [
         {
           "productId": "PolymerResin",
@@ -1269,16 +1436,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Polyester Fabric",
       "outputs": [
         {
           "productId": "Fabric",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_PolymerResin",
+      "id": "alternate-polymer-resin",
       "inputs": [
         {
           "productId": "Oil",
@@ -1286,7 +1456,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Polymer Resin",
       "outputs": [
         {
           "productId": "PolymerResin",
@@ -1296,10 +1468,11 @@ export const recipesYAML = [
           "productId": "HeavyOilResidue",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "Alternate_PureCateriumIngot",
+      "id": "alternate-pure-caterium-ingot",
       "inputs": [
         {
           "productId": "CateriumOre",
@@ -1311,16 +1484,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Pure Caterium Ingot",
       "outputs": [
         {
           "productId": "CateriumIngot",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 5
     },
     {
-      "id": "Alternate_PureCopperIngot",
+      "id": "alternate-pure-copper-ingot",
       "inputs": [
         {
           "productId": "Copper",
@@ -1332,16 +1508,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Pure Copper Ingot",
       "outputs": [
         {
           "productId": "CopperIngot",
           "quantity": 15
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "Alternate_PureIronIngot",
+      "id": "alternate-pure-iron-ingot",
       "inputs": [
         {
           "productId": "Iron",
@@ -1353,16 +1532,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Pure Iron Ingot",
       "outputs": [
         {
           "productId": "IronIngot",
           "quantity": 13
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_PureRawQuartz",
+      "id": "alternate-pure-quartz-crystal",
       "inputs": [
         {
           "productId": "RawQuartz",
@@ -1374,16 +1556,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Pure Quartz Crystal",
       "outputs": [
         {
-          "productId": "RawQuartz",
+          "productId": "QuartzResource",
           "quantity": 7
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "Alternate_Quickwire",
+      "id": "alternate-fused-quickwire",
       "inputs": [
         {
           "productId": "CateriumIngot",
@@ -1395,16 +1580,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Fused Quickwire",
       "outputs": [
         {
           "productId": "Quickwire",
           "quantity": 12
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "Alternate_RadioControlSystem",
+      "id": "alternate-radio-control-system",
       "inputs": [
         {
           "productId": "CrystalOscillator",
@@ -1424,16 +1612,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Radio Control System",
       "outputs": [
         {
           "productId": "RadioControlUnit",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 40
     },
     {
-      "id": "Alternate_RadioControlUnit_1",
+      "id": "alternate-radio-connection-unit",
       "inputs": [
         {
           "productId": "HeatSink",
@@ -1444,21 +1635,24 @@ export const recipesYAML = [
           "quantity": 2
         },
         {
-          "productId": "RawQuartz",
+          "productId": "QuartzResource",
           "quantity": 12
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Radio Connection Unit",
       "outputs": [
         {
           "productId": "RadioControlUnit",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 16
     },
     {
-      "id": "Alternate_RecycledRubber",
+      "id": "alternate-recycled-rubber",
       "inputs": [
         {
           "productId": "Plastic",
@@ -1470,16 +1664,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Recycled Rubber",
       "outputs": [
         {
           "productId": "Rubber",
           "quantity": 12
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_ReinforcedIronPlate_1",
+      "id": "alternate-bolted-iron-plate",
       "inputs": [
         {
           "productId": "IronPlate",
@@ -1491,16 +1688,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Bolted Iron Plate",
       "outputs": [
         {
           "productId": "IronPlateReinforced",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_ReinforcedIronPlate_2",
+      "id": "alternate-stitched-iron-plate",
       "inputs": [
         {
           "productId": "IronPlate",
@@ -1512,16 +1712,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Stitched Iron Plate",
       "outputs": [
         {
           "productId": "IronPlateReinforced",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 32
     },
     {
-      "id": "Alternate_Rotor",
+      "id": "alternate-steel-rotor",
       "inputs": [
         {
           "productId": "SteelPipe",
@@ -1533,16 +1736,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Steel Rotor",
       "outputs": [
         {
           "productId": "Rotor",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_RubberConcrete",
+      "id": "alternate-rubber-concrete",
       "inputs": [
         {
           "productId": "Limestone",
@@ -1554,16 +1760,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Rubber Concrete",
       "outputs": [
         {
           "productId": "Concrete",
           "quantity": 9
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_Screw_2",
+      "id": "alternate-steel-screw",
       "inputs": [
         {
           "productId": "SteelBeam",
@@ -1571,16 +1780,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Alternate: Steel Screw",
       "outputs": [
         {
           "productId": "IronScrew",
           "quantity": 52
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_Screw",
+      "id": "alternate-cast-screw",
       "inputs": [
         {
           "productId": "IronIngot",
@@ -1588,16 +1800,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Alternate: Cast Screw",
       "outputs": [
         {
           "productId": "IronScrew",
           "quantity": 20
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "Alternate_Silica",
+      "id": "alternate-cheap-silica",
       "inputs": [
         {
           "productId": "RawQuartz",
@@ -1609,16 +1824,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Cheap Silica",
       "outputs": [
         {
           "productId": "Silica",
           "quantity": 7
         }
-      ]
+      ],
+      "time": 16
     },
     {
-      "id": "Alternate_SloppyAlumina",
+      "id": "alternate-sloppy-alumina",
       "inputs": [
         {
           "productId": "Bauxite",
@@ -1630,16 +1848,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Sloppy Alumina",
       "outputs": [
         {
           "productId": "Alumina",
           "quantity": 12
         }
-      ]
+      ],
+      "time": 3
     },
     {
-      "id": "Alternate_Stator",
+      "id": "alternate-quickwire-stator",
       "inputs": [
         {
           "productId": "SteelPipe",
@@ -1651,16 +1872,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Quickwire Stator",
       "outputs": [
         {
           "productId": "Stator",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 15
     },
     {
-      "id": "Alternate_SteamedCopperSheet",
+      "id": "alternate-steamed-copper-sheet",
       "inputs": [
         {
           "productId": "CopperIngot",
@@ -1672,16 +1896,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Steamed Copper Sheet",
       "outputs": [
         {
           "productId": "CopperSheet",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "Alternate_SteelCanister",
+      "id": "alternate-steel-canister",
       "inputs": [
         {
           "productId": "SteelIngot",
@@ -1689,16 +1916,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Alternate: Steel Canister",
       "outputs": [
         {
           "productId": "EmptyCanister",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 3
     },
     {
-      "id": "Alternate_SteelCoatedPlate",
+      "id": "alternate-steel-coated-plate",
       "inputs": [
         {
           "productId": "SteelIngot",
@@ -1710,16 +1940,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alternate: Steel Coated Plate",
       "outputs": [
         {
           "productId": "IronPlate",
           "quantity": 18
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "Alternate_SteelRod",
+      "id": "alternate-steel-rod",
       "inputs": [
         {
           "productId": "SteelIngot",
@@ -1727,16 +1960,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Alternate: Steel Rod",
       "outputs": [
         {
           "productId": "IronRod",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 5
     },
     {
-      "id": "Alternate_SuperStateComputer",
+      "id": "alternate-super-state-computer",
       "inputs": [
         {
           "productId": "Computer",
@@ -1756,16 +1992,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Super-State Computer",
       "outputs": [
         {
           "productId": "SuperComputer",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 50
     },
     {
-      "id": "Alternate_TurboBlendFuel",
+      "id": "alternate-turbo-blend-fuel",
       "inputs": [
         {
           "productId": "Fuel",
@@ -1785,16 +2024,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Blender",
+      "name": "Alternate: Turbo Blend Fuel",
       "outputs": [
         {
           "productId": "TurboFuel",
           "quantity": 6
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "Alternate_TurboHeavyFuel",
+      "id": "alternate-turbo-heavy-fuel",
       "inputs": [
         {
           "productId": "HeavyOilResidue",
@@ -1806,16 +2048,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Turbo Heavy Fuel",
       "outputs": [
         {
           "productId": "TurboFuel",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "Alternate_TurboMotor_1",
+      "id": "alternate-turbo-electric-motor",
       "inputs": [
         {
           "productId": "Motor",
@@ -1835,16 +2080,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Turbo Electric Motor",
       "outputs": [
         {
           "productId": "TurboMotor",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 64
     },
     {
-      "id": "Alternate_TurboPressureMotor",
+      "id": "alternate-turbo-pressure-motor",
       "inputs": [
         {
           "productId": "Motor",
@@ -1864,16 +2112,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Turbo Pressure Motor",
       "outputs": [
         {
           "productId": "TurboMotor",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 32
     },
     {
-      "id": "Alternate_Turbofuel",
+      "id": "turbofuel",
       "inputs": [
         {
           "productId": "Fuel",
@@ -1885,16 +2136,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Turbofuel",
       "outputs": [
         {
           "productId": "TurboFuel",
           "quantity": 5
         }
-      ]
+      ],
+      "time": 16
     },
     {
-      "id": "Alternate_UraniumCell_1",
+      "id": "alternate-infused-uranium-cell",
       "inputs": [
         {
           "productId": "Uranium",
@@ -1914,16 +2168,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Alternate: Infused Uranium Cell",
       "outputs": [
         {
           "productId": "UraniumCell",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Alternate_WetConcrete",
+      "id": "alternate-wet-concrete",
       "inputs": [
         {
           "productId": "Limestone",
@@ -1935,16 +2192,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alternate: Wet Concrete",
       "outputs": [
         {
           "productId": "Concrete",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 3
     },
     {
-      "id": "Alternate_Wire_1",
+      "id": "alternate-iron-wire",
       "inputs": [
         {
           "productId": "IronIngot",
@@ -1952,16 +2212,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Alternate: Iron Wire",
       "outputs": [
         {
           "productId": "Wire",
           "quantity": 9
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "Alternate_Wire_2",
+      "id": "alternate-caterium-wire",
       "inputs": [
         {
           "productId": "CateriumIngot",
@@ -1969,16 +2232,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Alternate: Caterium Wire",
       "outputs": [
         {
           "productId": "Wire",
           "quantity": 8
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "Alumina",
+      "id": "alumina-solution",
       "inputs": [
         {
           "productId": "Bauxite",
@@ -1990,7 +2256,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Alumina Solution",
       "outputs": [
         {
           "productId": "Alumina",
@@ -2000,10 +2268,11 @@ export const recipesYAML = [
           "productId": "Silica",
           "quantity": 5
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "AluminumCasing",
+      "id": "aluminum-casing",
       "inputs": [
         {
           "productId": "AluminumIngot",
@@ -2011,16 +2280,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Aluminum Casing",
       "outputs": [
         {
           "productId": "AluminumCasing",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 2
     },
     {
-      "id": "AluminumScrap",
+      "id": "aluminum-scrap",
       "inputs": [
         {
           "productId": "Alumina",
@@ -2032,7 +2304,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Aluminum Scrap",
       "outputs": [
         {
           "productId": "AluminumScrap",
@@ -2042,10 +2316,11 @@ export const recipesYAML = [
           "productId": "Water",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 1
     },
     {
-      "id": "AluminumSheet",
+      "id": "alclad-aluminum-sheet",
       "inputs": [
         {
           "productId": "AluminumIngot",
@@ -2057,16 +2332,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Alclad Aluminum Sheet",
       "outputs": [
         {
           "productId": "AluminumPlate",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "Battery",
+      "id": "battery",
       "inputs": [
         {
           "productId": "SulfuricAcid",
@@ -2082,7 +2360,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Blender",
+      "name": "Battery",
       "outputs": [
         {
           "productId": "Battery",
@@ -2092,10 +2372,11 @@ export const recipesYAML = [
           "productId": "Water",
           "quantity": 1.5
         }
-      ]
+      ],
+      "time": 3
     },
     {
-      "id": "Beacon",
+      "id": "beacon",
       "inputs": [
         {
           "productId": "IronPlate",
@@ -2115,16 +2396,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Beacon",
       "outputs": [
         {
           "productId": "Beacon",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "Biofuel",
+      "id": "solid-biofuel",
       "inputs": [
         {
           "productId": "Biomass",
@@ -2132,16 +2416,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Solid Biofuel",
       "outputs": [
         {
           "productId": "Biofuel",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "Biomass_Leaves",
+      "id": "biomass-(leaves)",
       "inputs": [
         {
           "productId": "Leaves",
@@ -2149,16 +2436,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Biomass (Leaves)",
       "outputs": [
         {
           "productId": "Biomass",
           "quantity": 5
         }
-      ]
+      ],
+      "time": 5
     },
     {
-      "id": "Biomass_Mycelia",
+      "id": "biomass-(mycelia)",
       "inputs": [
         {
           "productId": "Mycelia",
@@ -2166,16 +2456,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Biomass (Mycelia)",
       "outputs": [
         {
           "productId": "Biomass",
           "quantity": 10
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "Biomass_Wood",
+      "id": "biomass-(wood)",
       "inputs": [
         {
           "productId": "Wood",
@@ -2183,16 +2476,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Biomass (Wood)",
       "outputs": [
         {
           "productId": "Biomass",
           "quantity": 20
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "Cable",
+      "id": "cable",
       "inputs": [
         {
           "productId": "Wire",
@@ -2200,16 +2496,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Cable",
       "outputs": [
         {
           "productId": "Cable",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 2
     },
     {
-      "id": "CircuitBoard",
+      "id": "circuit-board",
       "inputs": [
         {
           "productId": "CopperSheet",
@@ -2221,16 +2520,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Circuit Board",
       "outputs": [
         {
           "productId": "CircuitBoard",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "ColorCartridge",
+      "id": "color-cartridge",
       "inputs": [
         {
           "productId": "FlowerPetals",
@@ -2238,16 +2540,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Color Cartridge",
       "outputs": [
         {
           "productId": "ColorCartridge",
           "quantity": 10
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "SuperComputer",
+      "id": "supercomputer",
       "inputs": [
         {
           "productId": "Computer",
@@ -2267,16 +2572,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Supercomputer",
       "outputs": [
         {
           "productId": "SuperComputer",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 32
     },
     {
-      "id": "Computer",
+      "id": "computer",
       "inputs": [
         {
           "productId": "CircuitBoard",
@@ -2296,16 +2604,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Computer",
       "outputs": [
         {
           "productId": "Computer",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "Concrete",
+      "id": "concrete",
       "inputs": [
         {
           "productId": "Limestone",
@@ -2313,16 +2624,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Concrete",
       "outputs": [
         {
           "productId": "Concrete",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "CoolingSystem",
+      "id": "cooling-system",
       "inputs": [
         {
           "productId": "HeatSink",
@@ -2342,16 +2656,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Blender",
+      "name": "Cooling System",
       "outputs": [
         {
           "productId": "CoolingSystem",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 10
     },
     {
-      "id": "CopperPowder",
+      "id": "copper-powder",
       "inputs": [
         {
           "productId": "CopperIngot",
@@ -2359,16 +2676,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Copper Powder",
       "outputs": [
         {
           "productId": "CopperPowder",
           "quantity": 5
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "CopperSheet",
+      "id": "copper-sheet",
       "inputs": [
         {
           "productId": "CopperIngot",
@@ -2376,19 +2696,22 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Copper Sheet",
       "outputs": [
         {
           "productId": "CopperSheet",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "CrystalOscillator",
+      "id": "crystal-oscillator",
       "inputs": [
         {
-          "productId": "RawQuartz",
+          "productId": "QuartzResource",
           "quantity": 36
         },
         {
@@ -2401,16 +2724,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Crystal Oscillator",
       "outputs": [
         {
           "productId": "CrystalOscillator",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 120
     },
     {
-      "id": "ElectromagneticControlRod",
+      "id": "electromagnetic-control-rod",
       "inputs": [
         {
           "productId": "Stator",
@@ -2422,16 +2748,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Electromagnetic Control Rod",
       "outputs": [
         {
           "productId": "ElectromagneticControlRod",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 30
     },
     {
-      "id": "EncasedIndustrialBeam",
+      "id": "encased-industrial-beam",
       "inputs": [
         {
           "productId": "SteelBeam",
@@ -2443,16 +2772,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Encased Industrial Beam",
       "outputs": [
         {
           "productId": "EncasedSteelBeam",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 10
     },
     {
-      "id": "Fabric",
+      "id": "fabric",
       "inputs": [
         {
           "productId": "Mycelia",
@@ -2464,16 +2796,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Fabric",
       "outputs": [
         {
           "productId": "Fabric",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "FilterGasMask",
+      "id": "gas-Filter",
       "inputs": [
         {
           "productId": "Coal",
@@ -2489,16 +2824,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Gas Mask Filter",
       "outputs": [
         {
           "productId": "GasMaskFilter",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "FilterHazmat",
+      "id": "iodine-infused-GasMaskFilter",
       "inputs": [
         {
           "productId": "GasMaskFilter",
@@ -2514,16 +2852,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Iodine Infused GasMaskFilter",
       "outputs": [
         {
           "productId": "HazmatFilter",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 16
     },
     {
-      "id": "EmptyCanister",
+      "id": "empty-canister",
       "inputs": [
         {
           "productId": "Plastic",
@@ -2531,16 +2872,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Empty Canister",
       "outputs": [
         {
           "productId": "EmptyCanister",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "UnpackFuel",
+      "id": "packaged-fuel",
       "inputs": [
         {
           "productId": "Fuel",
@@ -2552,16 +2896,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Packaged Fuel",
       "outputs": [
         {
           "productId": "Fuel",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 3
     },
     {
-      "id": "FusedModularFrame",
+      "id": "fused-modular-frame",
       "inputs": [
         {
           "productId": "ModularFrameHeavy",
@@ -2577,16 +2924,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Blender",
+      "name": "Fused Modular Frame",
       "outputs": [
         {
           "productId": "FusedModularFrame",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 40
     },
     {
-      "id": "PressureTank",
+      "id": "empty-fluid-tank",
       "inputs": [
         {
           "productId": "AluminumIngot",
@@ -2594,16 +2944,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Empty Fluid Tank",
       "outputs": [
         {
           "productId": "PressureTank",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 1
     },
     {
-      "id": "Gunpowder",
+      "id": "black-powder",
       "inputs": [
         {
           "productId": "Coal",
@@ -2615,16 +2968,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Black Powder",
       "outputs": [
         {
           "productId": "Gunpowder",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "HeatSink",
+      "id": "heat-sink",
       "inputs": [
         {
           "productId": "AluminumPlate",
@@ -2636,16 +2992,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Heat Sink",
       "outputs": [
         {
           "productId": "HeatSink",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "HighSpeedConnector",
+      "id": "high-speed-connector",
       "inputs": [
         {
           "productId": "Quickwire",
@@ -2661,16 +3020,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "High-Speed Connector",
       "outputs": [
         {
           "productId": "HighSpeedConnector",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 16
     },
     {
-      "id": "IngotAluminum",
+      "id": "aluminum-ingot",
       "inputs": [
         {
           "productId": "AluminumScrap",
@@ -2682,16 +3044,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Foundry",
+      "name": "Aluminum Ingot",
       "outputs": [
         {
           "productId": "AluminumIngot",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "IngotCaterium",
+      "id": "caterium-ingot",
       "inputs": [
         {
           "productId": "CateriumOre",
@@ -2699,16 +3064,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Smelter",
+      "name": "Caterium Ingot",
       "outputs": [
         {
           "productId": "CateriumIngot",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "IngotCopper",
+      "id": "copper-ingot",
       "inputs": [
         {
           "productId": "Copper",
@@ -2716,16 +3084,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Smelter",
+      "name": "Copper Ingot",
       "outputs": [
         {
           "productId": "CopperIngot",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 2
     },
     {
-      "id": "IngotIron",
+      "id": "iron-ingot",
       "inputs": [
         {
           "productId": "Iron",
@@ -2733,16 +3104,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Smelter",
+      "name": "Iron Ingot",
       "outputs": [
         {
           "productId": "IronIngot",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 2
     },
     {
-      "id": "IngotSteel",
+      "id": "steel-ingot",
       "inputs": [
         {
           "productId": "Iron",
@@ -2754,16 +3128,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Foundry",
+      "name": "Steel Ingot",
       "outputs": [
         {
           "productId": "SteelIngot",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "IronPlateReinforced",
+      "id": "reinforced-iron-plate",
       "inputs": [
         {
           "productId": "IronPlate",
@@ -2775,16 +3152,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Reinforced Iron Plate",
       "outputs": [
         {
           "productId": "IronPlateReinforced",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "IronPlate",
+      "id": "iron-plate",
       "inputs": [
         {
           "productId": "IronIngot",
@@ -2792,16 +3172,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Iron Plate",
       "outputs": [
         {
           "productId": "IronPlate",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "IronRod",
+      "id": "iron-rod",
       "inputs": [
         {
           "productId": "IronIngot",
@@ -2809,16 +3192,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Iron Rod",
       "outputs": [
         {
           "productId": "IronRod",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "MixBiofuel",
+      "id": "-biofuel",
       "inputs": [
         {
           "productId": "Biofuel",
@@ -2830,16 +3216,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Biofuel",
       "outputs": [
         {
           "productId": "Biofuel",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "Fuel",
+      "id": "fuel",
       "inputs": [
         {
           "productId": "Oil",
@@ -2847,7 +3236,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Fuel",
       "outputs": [
         {
           "productId": "Fuel",
@@ -2857,10 +3248,11 @@ export const recipesYAML = [
           "productId": "PolymerResin",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "ModularFrameHeavy",
+      "id": "heavy-modular-frame",
       "inputs": [
         {
           "productId": "ModularFrame",
@@ -2880,16 +3272,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Heavy Modular Frame",
       "outputs": [
         {
           "productId": "ModularFrameHeavy",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 30
     },
     {
-      "id": "ModularFrame",
+      "id": "modular-frame",
       "inputs": [
         {
           "productId": "IronPlateReinforced",
@@ -2901,16 +3296,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Modular Frame",
       "outputs": [
         {
           "productId": "ModularFrame",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 60
     },
     {
-      "id": "MotorTurbo",
+      "id": "turbo-motor",
       "inputs": [
         {
           "productId": "CoolingSystem",
@@ -2930,16 +3328,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Turbo Motor",
       "outputs": [
         {
           "productId": "TurboMotor",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 32
     },
     {
-      "id": "Motor",
+      "id": "motor",
       "inputs": [
         {
           "productId": "Rotor",
@@ -2951,16 +3352,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Motor",
       "outputs": [
         {
           "productId": "Motor",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "NitricAcid",
+      "id": "nitric-acid",
       "inputs": [
         {
           "productId": "NitrogenGas",
@@ -2976,16 +3380,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Blender",
+      "name": "Nitric Acid",
       "outputs": [
         {
           "productId": "NitricAcid",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "Nobelisk",
+      "id": "nobelisk",
       "inputs": [
         {
           "productId": "Gunpowder",
@@ -2997,16 +3404,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Nobelisk",
       "outputs": [
         {
           "productId": "Explosive",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 20
     },
     {
-      "id": "NonFissileUranium",
+      "id": "non-fissile-uranium",
       "inputs": [
         {
           "productId": "NuclearWaste",
@@ -3026,7 +3436,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Blender",
+      "name": "Non-fissile Uranium",
       "outputs": [
         {
           "productId": "NonFissileUranium",
@@ -3036,10 +3448,11 @@ export const recipesYAML = [
           "productId": "Water",
           "quantity": 6
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "NuclearFuelRod",
+      "id": "uranium-fuel-rod",
       "inputs": [
         {
           "productId": "UraniumCell",
@@ -3055,16 +3468,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Uranium Fuel Rod",
       "outputs": [
         {
           "productId": "NuclearFuelRod",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 150
     },
     {
-      "id": "PackagedAluminaSolution",
+      "id": "packaged-alumina-solution",
       "inputs": [
         {
           "productId": "Alumina",
@@ -3076,16 +3492,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Packaged Alumina Solution",
       "outputs": [
         {
           "productId": "PackagedAluminaSolution",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 1
     },
     {
-      "id": "PackagedBiofuel",
+      "id": "packaged--biofuel",
       "inputs": [
         {
           "productId": "Biofuel",
@@ -3097,16 +3516,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Packaged  Biofuel",
       "outputs": [
         {
           "productId": "PackagedBiofuel",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 3
     },
     {
-      "id": "PackagedCrudeOil",
+      "id": "packaged-oil",
       "inputs": [
         {
           "productId": "Oil",
@@ -3118,16 +3540,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Packaged Oil",
       "outputs": [
         {
           "productId": "PackagedOil",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "PackagedNitricAcid",
+      "id": "packaged-nitric-acid",
       "inputs": [
         {
           "productId": "NitricAcid",
@@ -3139,16 +3564,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Packaged Nitric Acid",
       "outputs": [
         {
           "productId": "PackagedNitricAcid",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 2
     },
     {
-      "id": "PackagedNitrogen",
+      "id": "packaged-nitrogen-gas",
       "inputs": [
         {
           "productId": "NitrogenGas",
@@ -3160,16 +3588,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Packaged Nitrogen Gas",
       "outputs": [
         {
           "productId": "PackagedNitrogenGas",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 1
     },
     {
-      "id": "PackagedOilResidue",
+      "id": "packaged-heavy-oil-residue",
       "inputs": [
         {
           "productId": "HeavyOilResidue",
@@ -3181,16 +3612,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Packaged Heavy Oil Residue",
       "outputs": [
         {
           "productId": "PackagedOilResidue",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "PackagedSulfuricAcid",
+      "id": "packaged-sulfuric-acid",
       "inputs": [
         {
           "productId": "SulfuricAcid",
@@ -3202,16 +3636,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Packaged Sulfuric Acid",
       "outputs": [
         {
           "productId": "PackagedSulfuricAcid",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 3
     },
     {
-      "id": "PackagedTurboFuel",
+      "id": "packaged-turbofuel",
       "inputs": [
         {
           "productId": "TurboFuel",
@@ -3223,16 +3660,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Packaged Turbofuel",
       "outputs": [
         {
           "productId": "TurboFuel",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "PackagedWater",
+      "id": "packaged-water",
       "inputs": [
         {
           "productId": "Water",
@@ -3244,16 +3684,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Packaged Water",
       "outputs": [
         {
           "productId": "PackagedWater",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 2
     },
     {
-      "id": "PetroleumCoke",
+      "id": "petroleum-coke",
       "inputs": [
         {
           "productId": "HeavyOilResidue",
@@ -3261,16 +3704,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Petroleum Coke",
       "outputs": [
         {
           "productId": "PetroleumCoke",
           "quantity": 12
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "Plastic",
+      "id": "plastic",
       "inputs": [
         {
           "productId": "Oil",
@@ -3278,7 +3724,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Plastic",
       "outputs": [
         {
           "productId": "Plastic",
@@ -3288,10 +3736,11 @@ export const recipesYAML = [
           "productId": "HeavyOilResidue",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "EncasedPlutoniumCell",
+      "id": "encased-plutonium-cell",
       "inputs": [
         {
           "productId": "PlutoniumPellet",
@@ -3303,16 +3752,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Encased Plutonium Cell",
       "outputs": [
         {
           "productId": "EncasedPlutoniumCell",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "PlutoniumFuelRod",
+      "id": "plutonium-fuel-rod",
       "inputs": [
         {
           "productId": "EncasedPlutoniumCell",
@@ -3332,16 +3784,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Plutonium Fuel Rod",
       "outputs": [
         {
           "productId": "PlutoniumFuelRod",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 240
     },
     {
-      "id": "Plutonium",
+      "id": "plutonium-pellet",
       "inputs": [
         {
           "productId": "NonFissileUranium",
@@ -3353,16 +3808,21 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
-      "machineId": "ParticleAcceleratorLowPower",
+      "isVariablePower": true,
+      "machineId": "HadronCollider",
+      "maxPower": 750,
+      "minPower": 250,
+      "name": "Plutonium Pellet",
       "outputs": [
         {
           "productId": "PlutoniumPellet",
           "quantity": 30
         }
-      ]
+      ],
+      "time": 60
     },
     {
-      "id": "PowerPowerShard_1",
+      "id": "power-shard-(1)",
       "inputs": [
         {
           "productId": "PowerSlugGreen",
@@ -3370,16 +3830,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Power Shard (1)",
       "outputs": [
         {
           "productId": "PowerShard",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "PowerPowerShard_2",
+      "id": "power-shard-(2)",
       "inputs": [
         {
           "productId": "PowerSlugYellow",
@@ -3387,16 +3850,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Power Shard (2)",
       "outputs": [
         {
           "productId": "PowerShard",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "PowerPowerShard_3",
+      "id": "power-shard-(5)",
       "inputs": [
         {
           "productId": "PowerSlugPurple",
@@ -3404,16 +3870,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Power Shard (5)",
       "outputs": [
         {
           "productId": "PowerShard",
           "quantity": 5
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "ConversionCube",
+      "id": "pressure-conversion-cube",
       "inputs": [
         {
           "productId": "FusedModularFrame",
@@ -3425,16 +3894,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Pressure Conversion Cube",
       "outputs": [
         {
           "productId": "ConversionCube",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 60
     },
     {
-      "id": "PureAluminumIngot",
+      "id": "alternate-pure-aluminum-ingot",
       "inputs": [
         {
           "productId": "AluminumScrap",
@@ -3442,16 +3914,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": false,
+      "isVariablePower": false,
       "machineId": "Smelter",
+      "name": "Alternate: Pure Aluminum Ingot",
       "outputs": [
         {
           "productId": "AluminumIngot",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 2
     },
     {
-      "id": "RawQuartz",
+      "id": "quartz-crystal",
       "inputs": [
         {
           "productId": "RawQuartz",
@@ -3459,16 +3934,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Quartz Crystal",
       "outputs": [
         {
-          "productId": "RawQuartz",
+          "productId": "QuartzResource",
           "quantity": 3
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "Quickwire",
+      "id": "quickwire",
       "inputs": [
         {
           "productId": "CateriumIngot",
@@ -3476,16 +3954,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Quickwire",
       "outputs": [
         {
           "productId": "Quickwire",
           "quantity": 5
         }
-      ]
+      ],
+      "time": 5
     },
     {
-      "id": "RadioControlUnit",
+      "id": "radio-control-unit",
       "inputs": [
         {
           "productId": "AluminumCasing",
@@ -3501,16 +3982,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Radio Control Unit",
       "outputs": [
         {
           "productId": "RadioControlUnit",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 48
     },
     {
-      "id": "ResidualFuel",
+      "id": "residual-fuel",
       "inputs": [
         {
           "productId": "HeavyOilResidue",
@@ -3518,16 +4002,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Residual Fuel",
       "outputs": [
         {
           "productId": "Fuel",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "ResidualPlastic",
+      "id": "residual-plastic",
       "inputs": [
         {
           "productId": "PolymerResin",
@@ -3539,16 +4026,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Residual Plastic",
       "outputs": [
         {
           "productId": "Plastic",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "ResidualRubber",
+      "id": "residual-rubber",
       "inputs": [
         {
           "productId": "PolymerResin",
@@ -3560,16 +4050,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Residual Rubber",
       "outputs": [
         {
           "productId": "Rubber",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "Rotor",
+      "id": "rotor",
       "inputs": [
         {
           "productId": "IronRod",
@@ -3581,16 +4074,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Rotor",
       "outputs": [
         {
           "productId": "Rotor",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 15
     },
     {
-      "id": "Rubber",
+      "id": "rubber",
       "inputs": [
         {
           "productId": "Oil",
@@ -3598,7 +4094,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Rubber",
       "outputs": [
         {
           "productId": "Rubber",
@@ -3608,10 +4106,11 @@ export const recipesYAML = [
           "productId": "HeavyOilResidue",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "Screw",
+      "id": "screw",
       "inputs": [
         {
           "productId": "IronRod",
@@ -3619,16 +4118,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Screw",
       "outputs": [
         {
           "productId": "IronScrew",
           "quantity": 4
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "Silica",
+      "id": "silica",
       "inputs": [
         {
           "productId": "RawQuartz",
@@ -3636,16 +4138,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Silica",
       "outputs": [
         {
           "productId": "Silica",
           "quantity": 5
         }
-      ]
+      ],
+      "time": 8
     },
     {
-      "id": "SpaceElevatorPart_1",
+      "id": "smart-plating",
       "inputs": [
         {
           "productId": "IronPlateReinforced",
@@ -3657,16 +4162,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Smart Plating",
       "outputs": [
         {
           "productId": "SpaceElevatorPart_1",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 30
     },
     {
-      "id": "SpaceElevatorPart_2",
+      "id": "versatile-framework",
       "inputs": [
         {
           "productId": "ModularFrame",
@@ -3678,16 +4186,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Versatile Framework",
       "outputs": [
         {
           "productId": "SpaceElevatorPart_2",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "SpaceElevatorPart_3",
+      "id": "automated-wiring",
       "inputs": [
         {
           "productId": "Stator",
@@ -3699,16 +4210,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Automated Wiring",
       "outputs": [
         {
           "productId": "SpaceElevatorPart_3",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 24
     },
     {
-      "id": "SpaceElevatorPart_4",
+      "id": "modular-engine",
       "inputs": [
         {
           "productId": "Motor",
@@ -3724,16 +4238,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Modular Engine",
       "outputs": [
         {
           "productId": "SpaceElevatorPart_4",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 60
     },
     {
-      "id": "SpaceElevatorPart_5",
+      "id": "adaptive-control-unit",
       "inputs": [
         {
           "productId": "SpaceElevatorPart_3",
@@ -3753,16 +4270,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Manufacturer",
+      "name": "Adaptive Control Unit",
       "outputs": [
         {
           "productId": "SpaceElevatorPart_5",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 120
     },
     {
-      "id": "Rebar",
+      "id": "spiked-rebar",
       "inputs": [
         {
           "productId": "IronRod",
@@ -3770,16 +4290,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Spiked Rebar",
       "outputs": [
         {
           "productId": "Rebar",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "Stator",
+      "id": "stator",
       "inputs": [
         {
           "productId": "SteelPipe",
@@ -3791,16 +4314,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Assembler",
+      "name": "Stator",
       "outputs": [
         {
           "productId": "Stator",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "SteelBeam",
+      "id": "steel-beam",
       "inputs": [
         {
           "productId": "SteelIngot",
@@ -3808,16 +4334,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Steel Beam",
       "outputs": [
         {
           "productId": "SteelBeam",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 4
     },
     {
-      "id": "SteelPipe",
+      "id": "steel-pipe",
       "inputs": [
         {
           "productId": "SteelIngot",
@@ -3825,16 +4354,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Steel Pipe",
       "outputs": [
         {
           "productId": "SteelPipe",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "SulfuricAcid",
+      "id": "sulfuric-acid",
       "inputs": [
         {
           "productId": "Sulfur",
@@ -3846,16 +4378,19 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "OilRefinery",
+      "name": "Sulfuric Acid",
       "outputs": [
         {
           "productId": "SulfuricAcid",
           "quantity": 5
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "UnpackageAlumina",
+      "id": "unpackage-alumina-solution",
       "inputs": [
         {
           "productId": "PackagedAluminaSolution",
@@ -3863,7 +4398,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Unpackage Alumina Solution",
       "outputs": [
         {
           "productId": "Alumina",
@@ -3873,10 +4410,11 @@ export const recipesYAML = [
           "productId": "EmptyCanister",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 1
     },
     {
-      "id": "UnpackageBioFuel",
+      "id": "unpackage--biofuel",
       "inputs": [
         {
           "productId": "PackagedBiofuel",
@@ -3884,7 +4422,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Unpackage  Biofuel",
       "outputs": [
         {
           "productId": "Biofuel",
@@ -3894,10 +4434,11 @@ export const recipesYAML = [
           "productId": "EmptyCanister",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 2
     },
     {
-      "id": "UnpackageFuel",
+      "id": "unpackage-fuel",
       "inputs": [
         {
           "productId": "Fuel",
@@ -3905,7 +4446,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Unpackage Fuel",
       "outputs": [
         {
           "productId": "Fuel",
@@ -3915,10 +4458,11 @@ export const recipesYAML = [
           "productId": "EmptyCanister",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 2
     },
     {
-      "id": "UnpackageNitricAcid",
+      "id": "unpackage-nitric-acid",
       "inputs": [
         {
           "productId": "PackagedNitricAcid",
@@ -3926,7 +4470,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Unpackage Nitric Acid",
       "outputs": [
         {
           "productId": "NitricAcid",
@@ -3936,10 +4482,11 @@ export const recipesYAML = [
           "productId": "PressureTank",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 3
     },
     {
-      "id": "UnpackageNitrogen",
+      "id": "unpackage-nitrogen-gas",
       "inputs": [
         {
           "productId": "PackagedNitrogenGas",
@@ -3947,7 +4494,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Unpackage Nitrogen Gas",
       "outputs": [
         {
           "productId": "NitrogenGas",
@@ -3957,10 +4506,11 @@ export const recipesYAML = [
           "productId": "PressureTank",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 1
     },
     {
-      "id": "UnpackageOilResidue",
+      "id": "unpackage-heavy-oil-residue",
       "inputs": [
         {
           "productId": "PackagedOilResidue",
@@ -3968,7 +4518,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Unpackage Heavy Oil Residue",
       "outputs": [
         {
           "productId": "HeavyOilResidue",
@@ -3978,10 +4530,11 @@ export const recipesYAML = [
           "productId": "EmptyCanister",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "UnpackageOil",
+      "id": "unpackage-oil",
       "inputs": [
         {
           "productId": "PackagedOil",
@@ -3989,7 +4542,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Unpackage Oil",
       "outputs": [
         {
           "productId": "Oil",
@@ -3999,10 +4554,11 @@ export const recipesYAML = [
           "productId": "EmptyCanister",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 2
     },
     {
-      "id": "UnpackageSulfuricAcid",
+      "id": "unpackage-sulfuric-acid",
       "inputs": [
         {
           "productId": "PackagedSulfuricAcid",
@@ -4010,7 +4566,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Unpackage Sulfuric Acid",
       "outputs": [
         {
           "productId": "SulfuricAcid",
@@ -4020,10 +4578,11 @@ export const recipesYAML = [
           "productId": "EmptyCanister",
           "quantity": 1
         }
-      ]
+      ],
+      "time": 1
     },
     {
-      "id": "UnpackageTurboFuel",
+      "id": "unpackage-turbofuel",
       "inputs": [
         {
           "productId": "TurboFuel",
@@ -4031,7 +4590,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Unpackage Turbofuel",
       "outputs": [
         {
           "productId": "TurboFuel",
@@ -4041,10 +4602,11 @@ export const recipesYAML = [
           "productId": "EmptyCanister",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 6
     },
     {
-      "id": "UnpackageWater",
+      "id": "unpackage-water",
       "inputs": [
         {
           "productId": "PackagedWater",
@@ -4052,7 +4614,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Packager",
+      "name": "Unpackage Water",
       "outputs": [
         {
           "productId": "Water",
@@ -4062,10 +4626,11 @@ export const recipesYAML = [
           "productId": "EmptyCanister",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 1
     },
     {
-      "id": "UraniumCell",
+      "id": "encased-uranium-cell",
       "inputs": [
         {
           "productId": "Uranium",
@@ -4081,7 +4646,9 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Blender",
+      "name": "Encased Uranium Cell",
       "outputs": [
         {
           "productId": "UraniumCell",
@@ -4091,10 +4658,11 @@ export const recipesYAML = [
           "productId": "SulfuricAcid",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 12
     },
     {
-      "id": "Wire",
+      "id": "wire",
       "inputs": [
         {
           "productId": "CopperIngot",
@@ -4102,12 +4670,15 @@ export const recipesYAML = [
         }
       ],
       "isDefault": true,
+      "isVariablePower": false,
       "machineId": "Constructor",
+      "name": "Wire",
       "outputs": [
         {
           "productId": "Wire",
           "quantity": 2
         }
-      ]
+      ],
+      "time": 4
     }
 ] as RecipeYAML[];

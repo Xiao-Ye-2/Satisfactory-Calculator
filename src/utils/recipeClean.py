@@ -22,13 +22,24 @@ for recipe_key, recipe in data['recipes'].items():
         continue
 
     recipe_yaml = {
-        'id': clean_id(recipe_key),
+        'id': clean_id(recipe['slug']),
+        'name': recipe['name'],
+        'time': recipe['time'],
         'inputs': [{'productId': clean_id(ing['item']), 'quantity': ing['amount']} for ing in recipe['ingredients']],
         'outputs': [{'productId': clean_id(prod['item']), 'quantity': prod['amount']} for prod in recipe['products']],
         'machineId': clean_id(recipe['producedIn'][0]),
-        'isDefault': not recipe.get('alternate', False)
+        'isDefault': not recipe.get('alternate', False),
+        'isVariablePower': recipe.get('isVariablePower', False),
+        'minPower': recipe.get('minPower', 0) if recipe.get('isVariablePower', False) else None,
+        'maxPower': recipe.get('maxPower', 0) if recipe.get('isVariablePower', False) else None
     }
     recipes_yaml.append(recipe_yaml)
+
+# Remove all null fields in Yaml
+for recipe in recipes_yaml:
+    for key, value in list(recipe.items()):
+        if value is None:
+            del recipe[key]
 
 # Write to YAML file
 with open(yaml_output_path, 'w', encoding='utf-8') as yaml_file:

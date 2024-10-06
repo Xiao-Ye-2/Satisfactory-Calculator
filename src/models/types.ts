@@ -33,4 +33,9 @@ export interface RecipeYAML {
 	outputs: { productId: string; quantity: number }[];
 	machineId: string;
 	isDefault: boolean;
+	time: number;
+	name: string;
+	isVariablePower: boolean;
+	minPower: number;
+	maxPower: number;
 }

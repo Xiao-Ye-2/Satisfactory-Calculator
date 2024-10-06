@@ -72,7 +72,9 @@ export const TopBar: React.FC = () => {
                     >
                         <ul className="p-2">
                             <li onClick={() => handlePageChange('home')} className="hover:bg-gray-300 p-2 cursor-pointer rounded-md">Home</li>
-                            <li onClick={() => handlePageChange('products')} className="hover:bg-gray-300 p-2 cursor-pointer rounded-md">Products</li>
+                            <li onClick={() => handlePageChange('items')} className="hover:bg-gray-300 p-2 cursor-pointer rounded-md">Items</li>
+							<li onClick={() => handlePageChange('recipes')} className="hover:bg-gray-300 p-2 cursor-pointer rounded-md">Recipes</li>
+							<li onClick={() => handlePageChange('machines')} className="hover:bg-gray-300 p-2 cursor-pointer rounded-md">Machines</li>
                             {/* Add more options here */}
                         </ul>
                     </div>

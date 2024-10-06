@@ -31,6 +31,11 @@ recipesYAML.forEach((r: RecipeYAML) => {
         })),
         machineMap.get(r.machineId)!,
         r.isDefault || false,
+        r.time,
+        r.name,
+        r.isVariablePower,
+        r.minPower,
+        r.maxPower
     );
 
     // Map productId to list of recipes where it's used as an output
