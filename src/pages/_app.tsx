@@ -1,12 +1,15 @@
 import { AppProps } from "next/app"; // Import AppProps type
-import { TopBar } from "@/components/TopBar";
+import { Sidebar } from "../components/Sidebar";
 import "../styles/globals.css";
+import "../utils/i18n";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div>
-      <TopBar />
-      <Component {...pageProps} />
+    <div className="flex">
+      <Sidebar />
+      <main className="flex-1">
+        <Component {...pageProps} />
+      </main>
     </div>
   );
 }

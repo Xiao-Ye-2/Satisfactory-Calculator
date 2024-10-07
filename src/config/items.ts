@@ -1,10 +1,14 @@
-import { RecipeClass } from "@/models/Recipe";
-import { recipesYAML } from "./recipes";
+import ProductList from "./products.json";
+import RecipesYAML from "./recipes.json";
+import MachineList from "./machines.json";
 import { MachineClass } from "@/models/Machine";
 import { ProductClass } from "@/models/Product";
-import { machineList } from "./machines";
-import { productList } from "./products";
 import { RecipeYAML } from "@/models/types";
+import { RecipeClass } from "@/models/Recipe";
+
+export const productList = ProductList as ProductClass[];
+export const recipesYAML = RecipesYAML as RecipeYAML[];
+export const machineList = MachineList as MachineClass[];
 
 export const machineMap = new Map<string, MachineClass>();
 machineList.forEach((m: MachineClass) => {

@@ -1,67 +1,89 @@
+import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { ProductClass } from "@/models/Product";
-import { productList } from "@/config/products";
+import { productList } from "@/config/items";
 import ProductSection from "@/components/ProductSection";
 
 const ProductPage: React.FC = () => {
-  const initialCategories = {
-    Ores: productList.filter(
+  const { t, i18n } = useTranslation();
+  const [translatedProducts, setTranslatedProducts] = useState<ProductClass[]>(
+    [],
+  );
+
+  useEffect(() => {
+    const updateProducts = () => {
+      const translated = productList.map((product) => ({
+        ...product,
+        name: t(product.id),
+      }));
+      setTranslatedProducts(translated);
+    };
+
+    updateProducts();
+  }, [i18n.language, t]);
+
+  const productCategories: Record<string, ProductClass[]> = {
+    Ores: translatedProducts.filter(
       (product: ProductClass) =>
         product.isIngredient &&
         ![
-          "Water",
-          "Crude Oil",
-          "Ficsit Coupon",
-          "Leaves",
-          "Mycelia",
-          "Wood",
+          t("Water"),
+          t("Crude Oil"),
+          t("Ficsit Coupon"),
+          t("Leaves"),
+          t("Mycelia"),
+          t("Wood"),
         ].includes(product.name),
     ),
-    Ingots: productList.filter((product: ProductClass) =>
+    Ingots: translatedProducts.filter((product: ProductClass) =>
       product.id.includes("Ingot"),
     ),
-    Minerals: productList.filter((product: ProductClass) =>
+    Minerals: translatedProducts.filter((product: ProductClass) =>
       [
-        "Concrete",
-        "Quartz Crystal",
-        "Silica",
-        "Copper Powder",
-        "Polymer Resin",
-        "Petroleum Coke",
-        "Aluminum Scrap",
+        t("Concrete"),
+        t("Quartz Crystal"),
+        t("Silica"),
+        t("Copper Powder"),
+        t("Polymer Resin"),
+        t("Petroleum Coke"),
+        t("Aluminum Scrap"),
       ].includes(product.name),
     ),
-    Aliens: productList.filter((product: ProductClass) =>
-      ["Alien Protein", "Alien DNA Capsule"].includes(product.name),
+    Aliens: translatedProducts.filter((product: ProductClass) =>
+      [t("Alien Protein"), t("Alien DNA Capsule")].includes(product.name),
     ),
-    Nuclear: productList.filter(
+    Nuclear: translatedProducts.filter(
       (product: ProductClass) =>
         product.id.includes("Nuclear") || product.id.includes("Uranium"),
     ),
-    Spelevator: productList.filter((product: ProductClass) =>
+    Spelevator: translatedProducts.filter((product: ProductClass) =>
       product.id.includes("Spelevator"),
     ),
   };
 
-  const otherProducts = productList.filter(
+  const otherProducts = translatedProducts.filter(
     (product: ProductClass) =>
-      !Object.values(initialCategories).some((category) =>
+      !Object.values(productCategories).some((category) =>
         category.includes(product),
       ),
   );
 
-  const productCategories = {
-    ...initialCategories,
+  const allProductCategories = {
+    ...productCategories,
     Other: otherProducts,
   };
 
   return (
     <div className="p-4">
-      {Object.entries(productCategories).map(
+      <h1 className="text-4xl font-bold text-center text-red-600 mb-8">
+        {t("Items")}
+      </h1>
+      {Object.entries(allProductCategories).map(
         ([sectionName, sectionProducts]) =>
           sectionProducts.length > 0 && (
             <ProductSection
               key={sectionName}
-              sectionName={sectionName}
+              sectionName={t(sectionName)}
               sectionProducts={sectionProducts}
               headingClass="text-3xl font-extrabold mb-4 text-gray-800 shadow-md p-2 rounded-lg bg-gray-100"
             />

@@ -1,0 +1,28 @@
+{
+  "Items": "物品",
+  "Recipes": "配方",
+  "Machines": "机器",
+  "Ores": "矿石",
+  "Ingots": "锭",
+  "Minerals": "矿物",
+  "Aliens": "外星生物",
+  "Nuclear": "核能",
+  "Spelevator": "太空电梯",
+  "Other": "其他",
+  "Inputs": "输入",
+  "Outputs": "输出",
+  "sidebar": {
+    "home": "首页",
+    "items": "物品",
+    "recipes": "配方",
+    "basicRecipes": "基础配方",
+    "advancedRecipes": "高级配方",
+    "machines": "机器"
+  },
+  "productSelector": {
+    "title": "选择产品并设置目标速率",
+    "searchPlaceholder": "搜索产品...",
+    "noProductsFound": "未找到产品",
+    "targetRatePlaceholder": "目标速率"
+  }
+}

@@ -1,9 +1,9 @@
 import yaml
 import os
 
-products_file_path = 'data/yaml/products.yaml'
-recipes_file_path = 'data/yaml/recipes.yaml'
-machines_file_path = 'data/yaml/machines.yaml'
+products_file_path = 'data/products.yaml'
+recipes_file_path = 'data/recipes.yaml'
+machines_file_path = 'data/machines.yaml'
 
 # Load products, recipes, and machines from the YAML files
 with open(products_file_path, 'r') as products_file:

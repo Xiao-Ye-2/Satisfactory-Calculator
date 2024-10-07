@@ -1,9 +1,11 @@
 import Image from "next/image"; // Import Image from Next.js
 import { useState, useEffect, useRef } from "react";
-import { productList } from "@/config/products"; // Import product types
+import { useTranslation } from "react-i18next";
+import { productList } from "@/config/items"; // Import product types
 import { ProductClass } from "@/models/Product";
 
 export default function ProductSelector() {
+  const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [selectedProduct, setSelectedProduct] = useState<ProductClass | null>(
     null,
@@ -22,7 +24,7 @@ export default function ProductSelector() {
   const filteredProducts = productList.filter(
     (product) =>
       !product.isIngredient &&
-      product.name.toLowerCase().includes(searchTerm.toLowerCase()),
+      t(product.id).toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   // Handle outside clicks to close dropdowns
@@ -50,7 +52,7 @@ export default function ProductSelector() {
   return (
     <div className="max-w-lg mx-auto p-6">
       <h1 className="text-2xl font-semibold mb-4">
-        Select a Product and Set Target Rate
+        {t("productSelector.title")}
       </h1>
 
       <div className="flex space-x-4">
@@ -60,7 +62,7 @@ export default function ProductSelector() {
             {selectedProduct && (
               <Image
                 src={selectedProduct.imagePath}
-                alt={selectedProduct.name}
+                alt={t(selectedProduct.id)}
                 className="w-8 h-8 mr-2"
                 width={32}
                 height={32}
@@ -68,12 +70,12 @@ export default function ProductSelector() {
             )}
             <input
               type="text"
-              placeholder="Search product..."
+              placeholder={t("productSelector.searchPlaceholder")}
               value={searchTerm}
-              onClick={() => setIsProductDropdownVisible(true)} // Show dropdown on click
+              onClick={() => setIsProductDropdownVisible(true)}
               onChange={(e) => {
                 setSearchTerm(e.target.value);
-                setIsProductDropdownVisible(true); // Show dropdown on input change
+                setIsProductDropdownVisible(true);
               }}
               className="w-full p-2 border border-gray-300 rounded"
             />
@@ -87,23 +89,25 @@ export default function ProductSelector() {
                     key={product.id}
                     onClick={() => {
                       setSelectedProduct(product);
-                      setSearchTerm(product.name); // Set search term to selected product
-                      setIsProductDropdownVisible(false); // Close dropdown
+                      setSearchTerm(t(product.id));
+                      setIsProductDropdownVisible(false);
                     }}
                     className="flex items-center p-2 hover:bg-gray-100 cursor-pointer"
                   >
                     <Image
                       src={product.imagePath}
-                      alt={product.name}
+                      alt={t(product.id)}
                       className="w-8 h-8 mr-2"
                       width={32}
                       height={32}
                     />
-                    <span>{product.name}</span>
+                    <span>{t(product.id)}</span>
                   </div>
                 ))
               ) : (
-                <div className="p-2 text-gray-500">No products found</div>
+                <div className="p-2 text-gray-500">
+                  {t("productSelector.noProductsFound")}
+                </div>
               )}
             </div>
           )}
@@ -113,9 +117,9 @@ export default function ProductSelector() {
         <div className="relative w-1/2" ref={rateDropdownRef}>
           <input
             type="text"
-            placeholder="Target Rate"
+            placeholder={t("productSelector.targetRatePlaceholder")}
             value={targetRate}
-            onClick={() => setIsRateDropdownVisible(!isRateDropdownVisible)} // Show dropdown on click
+            onClick={() => setIsRateDropdownVisible(!isRateDropdownVisible)}
             onChange={(e) => setTargetRate(e.target.value)}
             className="w-full p-2 border border-gray-300 rounded"
           />
@@ -126,8 +130,8 @@ export default function ProductSelector() {
                 <div
                   key={rate}
                   onClick={() => {
-                    setTargetRate(rate.toString()); // Set rate value
-                    setIsRateDropdownVisible(false); // Close dropdown
+                    setTargetRate(rate.toString());
+                    setIsRateDropdownVisible(false);
                   }}
                   className="p-2 hover:bg-gray-100 cursor-pointer"
                 >

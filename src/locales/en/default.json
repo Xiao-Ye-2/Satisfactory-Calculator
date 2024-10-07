@@ -1,0 +1,28 @@
+{
+  "Items": "Items",
+  "Recipes": "Recipes",
+  "Machines": "Machines",
+  "Ores": "Ores",
+  "Ingots": "Ingots",
+  "Minerals": "Minerals",
+  "Aliens": "Aliens",
+  "Nuclear": "Nuclear",
+  "Spelevator": "Spelevator",
+  "Other": "Other",
+  "Inputs": "Inputs",
+  "Outputs": "Outputs",
+  "sidebar": {
+    "home": "Home",
+    "items": "Items",
+    "recipes": "Recipes",
+    "basicRecipes": "Basic Recipes",
+    "advancedRecipes": "Advanced Recipes",
+    "machines": "Machines"
+  },
+  "productSelector": {
+    "title": "Select a Product and Set Target Rate",
+    "searchPlaceholder": "Search product...",
+    "noProductsFound": "No products found",
+    "targetRatePlaceholder": "Target Rate"
+  }
+}
