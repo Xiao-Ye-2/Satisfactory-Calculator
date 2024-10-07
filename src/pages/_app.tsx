@@ -1,6 +1,6 @@
-import { AppProps } from 'next/app'; // Import AppProps type
-import { TopBar } from '@/components/TopBar';
-import '../styles/globals.css';
+import { AppProps } from "next/app"; // Import AppProps type
+import { TopBar } from "@/components/TopBar";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

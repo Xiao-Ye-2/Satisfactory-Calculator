@@ -1,22 +1,28 @@
-import Image from 'next/image'; // Import Image from Next.js
-import { useState, useEffect, useRef } from 'react';
-import { productList } from '@/config/products'; // Import product types
-import { ProductClass } from '@/models/Product';
+import Image from "next/image"; // Import Image from Next.js
+import { useState, useEffect, useRef } from "react";
+import { productList } from "@/config/products"; // Import product types
+import { ProductClass } from "@/models/Product";
 
 export default function ProductSelector() {
-  const [searchTerm, setSearchTerm] = useState<string>('');
-  const [selectedProduct, setSelectedProduct] = useState<ProductClass | null>(null);
-  const [targetRate, setTargetRate] = useState<string>('');
-  const [isProductDropdownVisible, setIsProductDropdownVisible] = useState<boolean>(false);
-  const [isRateDropdownVisible, setIsRateDropdownVisible] = useState<boolean>(false);
+  const [searchTerm, setSearchTerm] = useState<string>("");
+  const [selectedProduct, setSelectedProduct] = useState<ProductClass | null>(
+    null,
+  );
+  const [targetRate, setTargetRate] = useState<string>("");
+  const [isProductDropdownVisible, setIsProductDropdownVisible] =
+    useState<boolean>(false);
+  const [isRateDropdownVisible, setIsRateDropdownVisible] =
+    useState<boolean>(false);
 
   const productDropdownRef = useRef<HTMLDivElement>(null);
   const rateDropdownRef = useRef<HTMLDivElement>(null);
   const targetRates = [1, 2, 5, 10, 15, 30, 60, 120, 180, 300, 480, 600, 720];
 
   // Filter products that are not ingredients
-  const filteredProducts = productList.filter((product) =>
-    !product.isIngredient && product.name.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredProducts = productList.filter(
+    (product) =>
+      !product.isIngredient &&
+      product.name.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   // Handle outside clicks to close dropdowns
@@ -35,15 +41,17 @@ export default function ProductSelector() {
         setIsRateDropdownVisible(false);
       }
     }
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
   return (
     <div className="max-w-lg mx-auto p-6">
-      <h1 className="text-2xl font-semibold mb-4">Select a Product and Set Target Rate</h1>
+      <h1 className="text-2xl font-semibold mb-4">
+        Select a Product and Set Target Rate
+      </h1>
 
       <div className="flex space-x-4">
         {/* Product Search Dropdown */}

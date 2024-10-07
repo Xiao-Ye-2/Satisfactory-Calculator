@@ -1,11 +1,13 @@
-import Image from 'next/image';
-import { recipeMap } from '@/config/maps';
+import Image from "next/image";
+import { recipeMap } from "@/config/maps";
 
 export default function RecipesPage() {
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="max-w-7xl mx-auto p-6">
-        <h1 className="text-4xl font-bold text-center text-red-600 mb-8">Recipes</h1>
+        <h1 className="text-4xl font-bold text-center text-red-600 mb-8">
+          Recipes
+        </h1>
         <ul className="space-y-6">
           {[...recipeMap.entries()].map(([productId, recipes]) => (
             <li key={productId} className="bg-white rounded-lg shadow-md p-4">
@@ -20,7 +22,10 @@ export default function RecipesPage() {
                       <div className="flex items-center w-full">
                         <ul className="list-none flex space-x-2 flex-grow w-2/5 pr-2">
                           {recipe.inputs.map((prodQuant) => (
-                            <li key={prodQuant.product.id} className="flex items-center">
+                            <li
+                              key={prodQuant.product.id}
+                              className="flex items-center"
+                            >
                               <Image
                                 src={prodQuant.product.imagePath}
                                 alt={prodQuant.product.name}
@@ -32,10 +37,16 @@ export default function RecipesPage() {
                             </li>
                           ))}
                         </ul>
-                        <span className="text-gray-600 text-center w-1/12"> ➔ </span>
+                        <span className="text-gray-600 text-center w-1/12">
+                          {" "}
+                          ➔{" "}
+                        </span>
                         <ul className="list-none flex space-x-2 flex-grow w-1/4 pl-2">
                           {recipe.outputs.map((prodQuant) => (
-                            <li key={prodQuant.product.id} className="flex items-center">
+                            <li
+                              key={prodQuant.product.id}
+                              className="flex items-center"
+                            >
                               <Image
                                 src={prodQuant.product.imagePath}
                                 alt={prodQuant.product.name}
