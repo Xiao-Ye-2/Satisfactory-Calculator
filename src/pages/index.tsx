@@ -1,7 +1,7 @@
-import Image from "next/image"; // Import Image from Next.js
+import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { productList } from "@/config/items"; // Import product types
+import { productList } from "@/config/items";
 import { ProductClass } from "@/models/Product";
 
 export default function ProductSelector() {
