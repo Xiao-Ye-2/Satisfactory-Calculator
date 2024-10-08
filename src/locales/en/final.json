@@ -345,7 +345,7 @@
   "Foundry": "Foundry",
   "Assembler": "Assembler",
   "Manufacturer": "Manufacturer",
-  "OilRefinery": "OilRefinery",
+  "OilRefinery": "Refinery",
   "Blender": "Blender",
   "Packager": "Packager",
   "HadronCollider": "Hadron Collider",
@@ -363,6 +363,8 @@
   "Other": "Other",
   "Inputs": "Inputs",
   "Outputs": "Outputs",
+  "Hadron Collider": "Hadron Collider",
+  "Quantum Encoder": "Quantum Encoder",
   "sidebar": {
     "home": "Home",
     "items": "Items",
