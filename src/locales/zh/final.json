@@ -70,7 +70,7 @@
   "Leaves": "树叶",
   "Alumina": "氧化铝",
   "PackagedBiofuel": "包装生物燃料",
-  "Biofuel": "生物燃料",
+  "Biofuel": "Biofuel",
   "Fuel": "燃料",
   "HeavyOilResidue": "重油渣油",
   "Oil": "油",
@@ -351,6 +351,8 @@
   "HadronCollider": "强子对撞机",
   "QuantumEncoder": "量子编码器",
   "Converter": "转换器",
+  "Time": "时间",
+  "seconds": "秒",
   "Items": "物品",
   "Recipes": "配方",
   "Machines": "机器",
@@ -378,5 +380,7 @@
     "searchPlaceholder": "搜索产品...",
     "noProductsFound": "未找到产品",
     "targetRatePlaceholder": "目标速率"
-  }
+  },
+  "Outputs per minute": "每分钟输出",
+  "Inputs per minute": "每分钟输入"
 }

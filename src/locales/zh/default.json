@@ -1,4 +1,8 @@
 {
+  "Time": "时间",
+  "seconds": "秒",
+  "Outputs per minute": "每分钟输出",
+  "Inputs per minute": "每分钟输入",
   "Items": "物品",
   "Recipes": "配方",
   "Machines": "机器",

@@ -1,4 +1,8 @@
 {
+  "Time": "Time",
+  "seconds": "seconds",
+  "Outputs per minute": "Outputs per minute",
+  "Inputs per minute": "Inputs per minute",
   "Items": "Items",
   "Recipes": "Recipes",
   "Machines": "Machines",

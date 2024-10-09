@@ -351,6 +351,8 @@
   "HadronCollider": "Hadron Collider",
   "QuantumEncoder": "Quantum Encoder",
   "Converter": "Converter",
+  "Time": "Time",
+  "seconds": "seconds",
   "Items": "Items",
   "Recipes": "Recipes",
   "Machines": "Machines",
