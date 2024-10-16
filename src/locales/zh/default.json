@@ -1,4 +1,6 @@
 {
+  "replaceAll": "替换所有",
+  "setAsFavorite": "设为收藏",
   "Time": "时间",
   "seconds": "秒",
   "Outputs per minute": "每分钟输出",
@@ -6,6 +8,8 @@
   "Items": "物品",
   "Recipes": "配方",
   "Machines": "机器",
+  "Auto expand": "自动展开配方",
+  "Select recipe": "选择配方",
   "Ores": "矿石",
   "Ingots": "锭",
   "Minerals": "矿物",
@@ -36,6 +40,7 @@
     "title": "选择产品并设置目标速率",
     "searchPlaceholder": "搜索产品...",
     "noProductsFound": "未找到产品",
-    "targetRatePlaceholder": "目标速率"
+    "targetRatePlaceholder": "目标速率",
+    "rateReminder": "请输入目标速率"
   }
 }

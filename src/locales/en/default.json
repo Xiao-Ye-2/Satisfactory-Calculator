@@ -1,4 +1,6 @@
 {
+  "replaceAll": "Replace All",
+  "setAsFavorite": "Set as Favorite",
   "Time": "Time",
   "seconds": "seconds",
   "Outputs per minute": "Outputs per minute",
@@ -6,6 +8,8 @@
   "Items": "Items",
   "Recipes": "Recipes",
   "Machines": "Machines",
+  "Auto expand": "Auto expand",
+  "Select recipe": "Select recipe",
   "Ores": "Ores",
   "Ingots": "Ingots",
   "Minerals": "Minerals",
@@ -36,6 +40,7 @@
     "title": "Select a Product and Set Target Rate",
     "searchPlaceholder": "Search product...",
     "noProductsFound": "No products found",
-    "targetRatePlaceholder": "Target Rate"
+    "targetRatePlaceholder": "Target Rate",
+    "rateReminder": "Please enter the target rate"
   }
 }

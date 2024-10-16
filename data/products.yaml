@@ -296,7 +296,7 @@
   name: Heavy Oil Residue
 - id: Oil
   imagePath: /images/LiquidOil_Pipe.png
-  isIngredient: false
+  isIngredient: true
   name: Oil
 - id: SulfuricAcid
   imagePath: /images/LiquidSulfuricAcid_Pipe.png
@@ -332,7 +332,7 @@
   name: Nitric Acid
 - id: NitrogenGas
   imagePath: /images/NitrogenGas.png
-  isIngredient: false
+  isIngredient: true
   name: Nitrogen Gas
 - id: NonFissileUranium
   imagePath: /images/NonFissileUranium.png

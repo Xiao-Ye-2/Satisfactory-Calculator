@@ -446,7 +446,7 @@
   {
     "id": "Oil",
     "imagePath": "/images/LiquidOil_Pipe.png",
-    "isIngredient": false,
+    "isIngredient": true,
     "name": "Oil"
   },
   {
@@ -500,7 +500,7 @@
   {
     "id": "NitrogenGas",
     "imagePath": "/images/NitrogenGas.png",
-    "isIngredient": false,
+    "isIngredient": true,
     "name": "Nitrogen Gas"
   },
   {
