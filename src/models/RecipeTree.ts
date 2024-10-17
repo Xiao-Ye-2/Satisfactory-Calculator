@@ -84,4 +84,28 @@ export class RecipeTree {
     };
     expandNode(this.root);
   }
+
+  updateQuantities(newRootQuantity: number) {
+    const updateNode = (node: RecipeTreeNode, factor: number) => {
+      node.quantity *= factor;
+      if (node.recipe) {
+        node.children.forEach(child => updateNode(child, factor));
+      }
+    };
+
+    const factor = newRootQuantity / this.root.quantity;
+    updateNode(this.root, factor);
+  }
+
+  updateTreeQuantities(newRootQuantity: number) {
+    const updateNode = (node: RecipeTreeNode, factor: number) => {
+      node.quantity *= factor;
+      if (node.recipe) {
+        node.children.forEach(child => updateNode(child, factor));
+      }
+    };
+
+    const factor = newRootQuantity / this.root.quantity;
+    updateNode(this.root, factor);
+  }
 }

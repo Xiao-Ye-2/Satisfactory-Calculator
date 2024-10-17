@@ -14,13 +14,10 @@ export default function ProductSelector() {
     null,
   );
   const [targetRate, setTargetRate] = useState<string>("");
-  const [isRateDropdownVisible, setIsRateDropdownVisible] =
-    useState<boolean>(false);
+  const [isRateDropdownVisible, setIsRateDropdownVisible] = useState<boolean>(false);
   const [autoExpand, setAutoExpand] = useState<boolean>(true);
   const [recipeTree, setRecipeTree] = useState<RecipeTree | null>(null);
-  const [favoriteRecipes, setFavoriteRecipes] = useState<Map<string, string>>(
-    new Map(),
-  );
+  const [favoriteRecipes, setFavoriteRecipes] = useState<Map<string, string>>( new Map() );
   const [totals, setTotals] = useState<{
     inputs: Map<string, number>;
     outputs: Map<string, number>;
@@ -52,13 +49,14 @@ export default function ProductSelector() {
 
   useEffect(() => {
     if (selectedProduct && targetRate) {
-      const tree = new RecipeTree(selectedProduct, parseFloat(targetRate));
+      const newQuantity = parseFloat(targetRate);
+      const newTree = new RecipeTree(selectedProduct, newQuantity);
       if (autoExpand) {
-        tree.expandAll(favoriteRecipes);
+        newTree.expandAll(favoriteRecipes);
       } else {
-        tree.root.expand(false, favoriteRecipes);
+        newTree.root.expand(false, favoriteRecipes);
       }
-      setRecipeTree(tree);
+      setRecipeTree(newTree);
     } else {
       setRecipeTree(null);
     }
@@ -124,6 +122,8 @@ export default function ProductSelector() {
       const updatedRecipeTree = {
         ...recipeTree,
         expandAll: recipeTree.expandAll,
+        updateQuantities: recipeTree.updateQuantities,
+        updateTreeQuantities: recipeTree.updateTreeQuantities,
       };
       setRecipeTree(updatedRecipeTree);
 
@@ -167,12 +167,10 @@ export default function ProductSelector() {
           );
         });
         currentNode.recipe.outputs.forEach((output) => {
-          const outputQuantity =
-            (output.quantity * currentNode.quantity) / recipeQuantity;
+          const outputQuantity = (output.quantity * currentNode.quantity) / recipeQuantity;
           if (output.product.id === currentNode.product.id) {
             // 从输入中移除相应数量
-            const remainingQuantity =
-              inputs.get(output.product.id)! - outputQuantity;
+            const remainingQuantity = inputs.get(output.product.id)! - outputQuantity;
             if (remainingQuantity > 0) {
               inputs.set(output.product.id, remainingQuantity);
             } else {

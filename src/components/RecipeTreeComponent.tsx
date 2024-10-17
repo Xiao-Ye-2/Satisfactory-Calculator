@@ -17,12 +17,7 @@ interface RecipeTreeComponentProps {
   favoriteRecipes: Map<string, string>;
 }
 
-export const RecipeTreeComponent: React.FC<RecipeTreeComponentProps> = ({
-  node,
-  autoExpand,
-  onRecipeChange,
-  favoriteRecipes,
-}) => {
+const RecipeTreeComponent: React.FC<RecipeTreeComponentProps> = React.memo(({ node, autoExpand, onRecipeChange, favoriteRecipes }) => {
   const { t } = useTranslation();
   const [expanded, setExpanded] = useState(node.recipe !== null);
 
@@ -56,7 +51,7 @@ export const RecipeTreeComponent: React.FC<RecipeTreeComponentProps> = ({
   };
 
   return (
-    <div className="ml-8 border-l-2 border-gray-300 pl-4 py-2">
+    <div key={`${node.product.id}-${node.quantity}`} className="ml-8 border-l-2 border-gray-300 pl-4 py-2">
       <div className="flex items-center">
         <Image
           src={node.product.imagePath}
@@ -122,5 +117,10 @@ export const RecipeTreeComponent: React.FC<RecipeTreeComponentProps> = ({
           />
         ))}
     </div>
-  );
-};
+    );
+  },
+);
+
+RecipeTreeComponent.displayName = "RecipeTreeComponent";
+
+export { RecipeTreeComponent };
