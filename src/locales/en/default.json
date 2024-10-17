@@ -19,6 +19,8 @@
   "Other": "Other",
   "Inputs": "Inputs",
   "Outputs": "Outputs",
+  "Net Inputs": "Net Inputs",
+  "Net Outputs": "Net Outputs",
   "Constructor": "Constructor",
   "Assembler": "Assembler",
   "Manufacturer": "Manufacturer",

@@ -23,7 +23,7 @@ export function SearchDropdown<T>({
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const filteredItems = items.filter((item) =>
-    getItemName(item).toLowerCase().includes(searchTerm.toLowerCase())
+    getItemName(item).toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   useEffect(() => {

@@ -17,19 +17,27 @@ export default function RecipesPage() {
 
   useEffect(() => {
     const updateRecipes = () => {
-      const updatedRecipes = Array.from(recipeMap.values()).flat().map((recipe) => ({
-        ...recipe,
-        name: t(recipe.id),
-        inputs: recipe.inputs.map((input) => ({
-          ...input,
-          product: { ...input.product, name: t(input.product.id) },
-        })),
-        outputs: recipe.outputs.map((output) => ({
-          ...output,
-          product: { ...output.product, name: t(output.product.id) },
-        })),
-        machine: { ...recipe.machine, name: t(recipe.machine.id) },
-      }));
+      const updatedRecipes = Array.from(recipeMap.values())
+        .flat()
+        .map((recipe) => ({
+          ...recipe,
+          name: t(recipe.id),
+          inputs: recipe.inputs.map((input) => ({
+            ...input,
+            product: {
+              ...input.product,
+              name: t(input.product.id),
+            },
+          })),
+          outputs: recipe.outputs.map((output) => ({
+            ...output,
+            product: {
+              ...output.product,
+              name: t(output.product.id),
+            },
+          })),
+          machine: { ...recipe.machine, name: t(recipe.machine.id) },
+        }));
       setRecipes(updatedRecipes as RecipeClass[]);
     };
 
@@ -37,17 +45,26 @@ export default function RecipesPage() {
   }, [i18n.language, t]);
 
   const filteredRecipes = recipes.filter((recipe) => {
-    const inputMatch = !inputFilter || recipe.inputs.some(input => input.product.id === inputFilter.id);
-    const outputMatch = !outputFilter || recipe.outputs.some(output => output.product.id === outputFilter.id);
-    const machineMatch = !machineFilter || recipe.machine.id === machineFilter.id;
+    const inputMatch =
+      !inputFilter ||
+      recipe.inputs.some((input) => input.product.id === inputFilter.id);
+    const outputMatch =
+      !outputFilter ||
+      recipe.outputs.some((output) => output.product.id === outputFilter.id);
+    const machineMatch =
+      !machineFilter || recipe.machine.id === machineFilter.id;
     return inputMatch && outputMatch && machineMatch;
   });
 
-  const filteredProducts = productList.filter(product => !product.isIngredient);
+  const filteredProducts = productList.filter(
+    (product) => !product.isIngredient,
+  );
 
   return (
     <div className="h-screen flex flex-col bg-gray-100">
-      <h1 className="text-3xl font-semibold text-gray-800 py-4 px-6 bg-white shadow-sm">{t("Recipes")}</h1>
+      <h1 className="text-3xl font-semibold text-gray-800 py-4 px-6 bg-white shadow-sm">
+        {t("Recipes")}
+      </h1>
       <div className="flex-1 overflow-y-auto px-4 sm:px-6 lg:px-8">
         <div className="flex space-x-4 mb-4">
           <SearchDropdown
@@ -74,13 +91,18 @@ export default function RecipesPage() {
         </div>
         <ul className="space-y-6 pb-6">
           {filteredRecipes.map((recipe, index) => (
-            <li key={`${recipe.id}-${index}`} className="bg-white rounded-lg shadow-md p-4">
+            <li
+              key={`${recipe.id}-${index}`}
+              className="bg-white rounded-lg shadow-md p-4"
+            >
               <div className="flex justify-between items-center">
                 <div className="w-4/5">
                   <h2 className="text-xl font-semibold mb-4">{recipe.name}</h2>
                   <div className="flex justify-between mb-4">
                     <div className="w-5/12">
-                      <h3 className="text-sm font-medium text-gray-900 mb-2">{t("Inputs")}</h3>
+                      <h3 className="text-sm font-medium text-gray-900 mb-2">
+                        {t("Inputs")}
+                      </h3>
                       <div className="flex items-center space-x-2">
                         {recipe.inputs.map((input, index) => (
                           <div key={index} className="flex items-center">
@@ -100,7 +122,9 @@ export default function RecipesPage() {
                       <span className="text-2xl">➔</span>
                     </div>
                     <div className="w-5/12">
-                      <h3 className="text-sm font-medium text-gray-900 mb-2">{t("Outputs")}</h3>
+                      <h3 className="text-sm font-medium text-gray-900 mb-2">
+                        {t("Outputs")}
+                      </h3>
                       <div className="flex items-center space-x-2">
                         {recipe.outputs.map((output, index) => (
                           <div key={index} className="flex items-center">
@@ -119,11 +143,18 @@ export default function RecipesPage() {
                   </div>
                   <div className="flex justify-between">
                     <div className="w-5/12">
-                      <h3 className="text-sm font-medium text-gray-900 mb-2">{t("Inputs per minute")}</h3>
+                      <h3 className="text-sm font-medium text-gray-900 mb-2">
+                        {t("Inputs per minute")}
+                      </h3>
                       <div className="flex items-center space-x-2">
                         {recipe.inputs.map((input, index) => {
-                          const quantityPerMinute = (input.quantity * 60 / recipe.time);
-                          const formattedQuantity = Number.isInteger(quantityPerMinute) ? quantityPerMinute.toString() : quantityPerMinute.toFixed(2);
+                          const quantityPerMinute =
+                            (input.quantity * 60) / recipe.time;
+                          const formattedQuantity = Number.isInteger(
+                            quantityPerMinute,
+                          )
+                            ? quantityPerMinute.toString()
+                            : quantityPerMinute.toFixed(2);
                           return (
                             <div key={index} className="flex items-center">
                               <Image
@@ -133,7 +164,9 @@ export default function RecipesPage() {
                                 height={24}
                                 className="mr-1"
                               />
-                              <span className="text-xs">{formattedQuantity}</span>
+                              <span className="text-xs">
+                                {formattedQuantity}
+                              </span>
                             </div>
                           );
                         })}
@@ -143,11 +176,18 @@ export default function RecipesPage() {
                       <span className="text-2xl">➔</span>
                     </div>
                     <div className="w-5/12">
-                      <h3 className="text-sm font-medium text-gray-900 mb-2">{t("Outputs per minute")}</h3>
+                      <h3 className="text-sm font-medium text-gray-900 mb-2">
+                        {t("Outputs per minute")}
+                      </h3>
                       <div className="flex items-center space-x-2">
                         {recipe.outputs.map((output, index) => {
-                          const quantityPerMinute = (output.quantity * 60 / recipe.time);
-                          const formattedQuantity = Number.isInteger(quantityPerMinute) ? quantityPerMinute.toString() : quantityPerMinute.toFixed(2);
+                          const quantityPerMinute =
+                            (output.quantity * 60) / recipe.time;
+                          const formattedQuantity = Number.isInteger(
+                            quantityPerMinute,
+                          )
+                            ? quantityPerMinute.toString()
+                            : quantityPerMinute.toFixed(2);
                           return (
                             <div key={index} className="flex items-center">
                               <Image
@@ -157,7 +197,9 @@ export default function RecipesPage() {
                                 height={24}
                                 className="mr-1"
                               />
-                              <span className="text-xs">{formattedQuantity}</span>
+                              <span className="text-xs">
+                                {formattedQuantity}
+                              </span>
                             </div>
                           );
                         })}
@@ -173,7 +215,9 @@ export default function RecipesPage() {
                     height={80}
                     className="mb-2"
                   />
-                  <span className="text-sm text-center">{t(recipe.machine.name)}</span>
+                  <span className="text-sm text-center">
+                    {t(recipe.machine.name)}
+                  </span>
                   <span className="text-sm text-gray-600 mt-2">
                     {t("Time")}: {recipe.time} {t("seconds")}
                   </span>

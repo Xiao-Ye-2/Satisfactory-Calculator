@@ -19,6 +19,8 @@
   "Other": "其他",
   "Inputs": "输入",
   "Outputs": "输出",
+  "Net Inputs": "净输入",
+  "Net Outputs": "净输出",
   "Constructor": "构造器",
   "Assembler": "组装器",
   "Manufacturer": "制造器",

@@ -8,7 +8,11 @@ export class RecipeTreeNode {
   recipe: RecipeClass | null;
   children: RecipeTreeNode[];
 
-  constructor(product: ProductClass, quantity: number, recipe: RecipeClass | null = null) {
+  constructor(
+    product: ProductClass,
+    quantity: number,
+    recipe: RecipeClass | null = null,
+  ) {
     this.product = product;
     this.quantity = quantity;
     this.recipe = recipe;
@@ -25,21 +29,27 @@ export class RecipeTreeNode {
 
     const favoriteRecipeId = favoriteRecipes.get(this.product.id);
     const selectedRecipe = favoriteRecipeId
-      ? recipes.find(r => r.id === favoriteRecipeId)
-      : recipes.find(r => r.isDefault) || recipes[0];
+      ? recipes.find((r) => r.id === favoriteRecipeId)
+      : recipes.find((r) => r.isDefault) || recipes[0];
     if (selectedRecipe) {
       this.setRecipe(selectedRecipe);
     }
 
     if (autoExpand) {
-      this.children.forEach(child => child.expand(autoExpand, favoriteRecipes));
+      this.children.forEach((child) =>
+        child.expand(autoExpand, favoriteRecipes),
+      );
     }
   }
 
   setRecipe(recipe: RecipeClass) {
     this.recipe = recipe;
-    this.children = recipe.inputs.map(input => {
-      const childQuantity = (input.quantity / recipe.outputs[0].quantity) * this.quantity;
+    this.children = recipe.inputs.map((input) => {
+      const outputIndex = this.recipe!.outputs.findIndex(
+        (output) => output.product.id === this.product.id,
+      );
+      const outputQuantity = this.recipe!.outputs[outputIndex].quantity;
+      const childQuantity = (input.quantity / outputQuantity) * this.quantity;
       return new RecipeTreeNode(input.product, childQuantity);
     });
   }
@@ -47,11 +57,15 @@ export class RecipeTreeNode {
   updateQuantities(newQuantity: number) {
     this.quantity = newQuantity;
     if (this.recipe) {
-      this.children = this.recipe.inputs.map(input => {
-        const childQuantity = (input.quantity / this.recipe!.outputs[0].quantity) * this.quantity;
+      this.children = this.recipe.inputs.map((input) => {
+        const outputIndex = this.recipe!.outputs.findIndex(
+          (output) => output.product.id === this.product.id,
+        );
+        const outputQuantity = this.recipe!.outputs[outputIndex].quantity;
+        const childQuantity = (input.quantity / outputQuantity) * this.quantity;
         return new RecipeTreeNode(input.product, childQuantity);
       });
-      this.children.forEach(child => child.updateQuantities(child.quantity));
+      this.children.forEach((child) => child.updateQuantities(child.quantity));
     }
   }
 }
